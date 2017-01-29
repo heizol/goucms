@@ -1,0 +1,1160 @@
+2017/01/27 10:53:02 [error] 8505#0: *1 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. application->global_controller() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:27
+PHP message: PHP   7. index->__construct() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:41
+PHP message: PHP   8. base->__construct() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:11
+PHP message: PHP   9. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/member/lib/base.class.php:9
+PHP message: PHP  10. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  11. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  13. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  14. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  15. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header 
+2017/01/27 10:53:02 [error] 8505#0: *1 directory index of "/Users/new/system/workdir/gouCMS/statics/uploads/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /statics/uploads/ HTTP/1.1", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/"
+2017/01/27 10:53:02 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. application->global_controller() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:27
+PHP message: PHP   7. index->__construct() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:41
+PHP message: PHP   8. base->__construct() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:11
+PHP message: PHP   9. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/member/lib/base.class.php:9
+PHP message: PHP  10. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  11. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  13. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  14. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  15. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header 
+2017/01/27 10:53:02 [error] 8505#0: *1 directory index of "/Users/new/system/workdir/gouCMS/statics/uploads/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /statics/uploads/ HTTP/1.1", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/"
+2017/01/27 10:53:02 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. application->global_controller() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:27
+PHP message: PHP   7. index->__construct() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:41
+PHP message: PHP   8. base->__construct() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:11
+PHP message: PHP   9. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/member/lib/base.class.php:9
+PHP message: PHP  10. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  11. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  13. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  14. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  15. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header 
+2017/01/27 10:53:02 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. fund->get() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/fund.action.php:8
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/ap
+2017/01/27 10:53:02 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:02 [error] 8505#0: *1 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. application->global_controller() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:27
+PHP message: PHP   7. cart->__construct() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:41
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/member/cart.action.php:13
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/member/cart/getnumber/1485485582243 HTTP/1.1",
+2017/01/27 10:53:07 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:12 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:17 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:22 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:27 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:32 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:37 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:42 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:47 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:52 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:53:57 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:02 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:07 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:12 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:17 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:22 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:27 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:32 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:39 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:45 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:52 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:54:57 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:07 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:18 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:28 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:34 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:44 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:49 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:55:59 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:09 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:16 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:27 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:34 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:39 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:56:50 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:57:01 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:57:11 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:57:20 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:57:25 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 10:57:30 [error] 8505#0: *3 FastCGI sent in stderr: "PHP message: PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php on line 60
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. getshop->lottery_shop_json() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/modules/api/getshop.action.php:16
+PHP message: PHP   9. model->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP  10. call_user_func_array:{/Users/new/system/workdir/gouCMS/system/libs/model.class.php:41}() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  11. db_mysql::GetObject() /Users/new/system/workdir/gouCMS/system/libs/model.class.php:41
+PHP message: PHP  12. db_mysql->__construct() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:98
+PHP message: PHP  13. db_mysql->connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:41
+PHP message: PHP  14. mysql_connect() /Users/new/system/workdir/gouCMS/system/libs/db_mysql.class.php:60" while reading response header from upstream, client: 127.0.0.1, server: localhost
+2017/01/27 11:03:34 [error] 8505#0: *70 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 71
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->glist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:166
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:71
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 73
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.ph
+2017/01/27 11:03:34 [error] 8505#0: *70 FastCGI sent in stderr: "tion.php:166
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:90
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 91
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:188
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->glist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:166
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:91
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/s
+2017/01/27 11:03:34 [error] 8505#0: *70 FastCGI sent in stderr: "6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->glist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/go/index.action.php:166
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:98" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/goods_list HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/"
+2017/01/27 11:14:23 [error] 8505#0: *93 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:14:23 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486863104 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:14:31 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486863104 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:14:33 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486863104/1485486873542 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:14:37 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486863104/1485486873542 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086"
+2017/01/27 11:14:42 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:14:42 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486882660 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:15:21 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:15:21 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486921535 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 11:15:22 [error] 8505#0: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485486882660 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086"
+2017/01/27 12:28:15 [error] 10513#0: *5 upstream timed out (60: Operation timed out) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 12:29:25 [error] 10513#0: *5 upstream timed out (60: Operation timed out) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/user/login"
+2017/01/27 12:44:34 [error] 10513#0: *26 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 71
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. cart->cartlist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/cart.action.php:171
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:71
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 73
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.cl
+2017/01/27 12:44:34 [error] 10513#0: *26 FastCGI sent in stderr: "/member/cart.action.php:171
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:90
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 91
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. cart->cartlist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/cart.action.php:171
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:91
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback in
+2017/01/27 12:44:34 [error] 10513#0: *26 FastCGI sent in stderr: "hp:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. cart->cartlist() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/cart.action.php:171
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:98" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/member/cart/cartlist HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/goods_list"
+2017/01/27 12:47:31 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 67
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->login() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:81
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:67
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 68
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.
+2017/01/27 12:47:31 [error] 10513#0: *58 FastCGI sent in stderr: "r.action.php:81
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:83
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 84
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->login() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:81
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:84
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/
+2017/01/27 12:47:31 [error] 10513#0: *58 FastCGI sent in stderr: "HP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->login() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:81
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:91" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI= HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/cart/pay/1485492448682"
+2017/01/27 12:47:32 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:47:32 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:47:32 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485492452247 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:48:13 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:48:14 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:48:14 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/1485492494087 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:48:23 [error] 10513#0: *58 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 61
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->register() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:200
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:61
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 62
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.cl
+2017/01/27 12:48:23 [error] 10513#0: *58 FastCGI sent in stderr: "/member/user.action.php:200
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->register() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:200
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback in
+2017/01/27 12:48:23 [error] 10513#0: *58 FastCGI sent in stderr: "hp:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. user->register() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/member/user.action.php:200
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/register HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/member/user/login/aHR0cDovLzEyNy4wLjAuMTo4MDg2Lz8vbWVtYmVyL2NhcnQvcGF5LzE0ODU0OTI0NDg2ODI="
+2017/01/27 12:48:30 [error] 10513#0: *71 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function imagettfbbox() in /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php on line 42
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. checkcode->image() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. checkcodeimg->config() /Users/new/system/workdir/gouCMS/system/modules/api/checkcode.action.php:23
+PHP message: PHP   9. checkcodeimg->createimg() /Users/new/system/workdir/gouCMS/system/modules/api/lib/checkcodeimg.class.php:22" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/api/checkcode/image/80_27/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/register"
+2017/01/29 11:31:06 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 215
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 11:31:06 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 215
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 11:31:46 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 137
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 11:31:46 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 137
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 11:32:19 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 137
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 11:32:20 [error] 10513#0: *328 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: text in /Users/new/system/workdir/gouCMS/system/modules/sysmana/tpl/admin.default.tpl.php on line 137
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"

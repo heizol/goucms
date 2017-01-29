@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="{G_TEMPLATES_STYLE}/js/area.js"></script>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>收货地址 - {wc:$webname}触屏版</title>
+    <meta content="app-id=518966501" name="apple-itunes-app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    
+    <link href="{G_TEMPLATES_CSS}/mobile/comm.css" rel="stylesheet" type="text/css" />
+  <link href="{G_TEMPLATES_CSS}/mobile/login.css" rel="stylesheet" type="text/css" />
+  <script src="{G_TEMPLATES_JS}/mobile/jquery190.js" language="javascript" type="text/javascript"></script>
+  <script id="pageJS" data="{G_TEMPLATES_JS}/mobile/Register.js" language="javascript" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="h5-1yyg-v1" id="content">
+        
+<!-- 栏目页面顶部 -->
+
+
+<!-- 内页顶部 -->
+<script>
+
+  var  _jsonlist = {wc:fun:json_encode($member_dizhi)};
+
+    function update(id,th){
+      $("#address_list").hide();
+       $("#url_address").attr("dataUrl","{WEB_PATH}/mobile/home/updateaddress");
+       $(".no_address").hide();
+       setup3();
+      $(".update").css({
+        "background":"#f60",
+        "color":"#fff"
+      })
+       th.style.backgroundColor = "#fff";
+       th.style.color = "#999"
+       $(".registerCon2").show();
+       var str = $("#dizhi_"+id).html();
+       var spt = str.replace("详细地址：","").split(",");
+       var jsonlist = {}
+          $("#province3").append('<option selected value="'+spt[0]+'">'+spt[0]+'</option>');
+          $("#city3").append('<option selected value="'+spt[1]+'">'+spt[1]+'</option>');
+          $("#county3").append('<option selected value="'+spt[2]+'">'+spt[2]+'</option>');
+          $("#ren3").val($("#shr_"+id).text().replace("收货人：",""));
+          $("#userMobile3").val($("#mob_"+id).text().replace("手机号码：",""));
+          $("#qq3").val($("#qq_"+id).text().replace("QQ号：",""));
+          $("#youbian3").val($("#yb_"+id).text().replace("邮政编码：",""));
+          $("#jiedao3").val(spt[3]);
+          $("#aa").show();
+          $("#add").show();
+
+       var fut = function(data){
+        console.log(data.arr);
+          if(data.status == 1){
+              window.location.reload();
+          }else{
+              window.location.href="{WEB_PATH}/mobile/home/results/error";
+          }
+       }   
+      
+      $("#submit3").click(function(){
+          if(confirm("确认修改？")){
+              var _lists = {
+                     aid:id,
+                     ren:$("#ren3").val(),
+                     mobile:  $("#userMobile3").val(),
+                     qq : $("#qq3").val(),
+                     youbian :  $("#youbian3").val(),
+                     jiedao : $("#jiedao3").val(),
+                     sheng : $("#province3").val(),
+                     shi : $("#city3").val(),
+                     xian :  $("#county3").val()
+                  }
+
+              var url = $("#url_address3").attr("dataUrl");
+              $.post(url, _lists,fut,'json');
+         }
+      })
+
+ }
+
+
+ function setdefault(id,th){
+      if(confirm("确定设为默认吗？")){
+          window.location.href = "{WEB_PATH}/mobile/home/setdefault/"+id;
+      }
+ }
+</script>
+<script type="text/javascript">
+ $(function(){
+  $("#tishi_1").click(function(){
+      $("#tishi_2").hide();
+       $("#tishi_3").hide();
+        $("#tishi_4").hide();
+  });
+ });
+</script>
+    <header class="g-header">
+        <div class="head-l">
+          <a href="javascript:;" onClick="history.go(-1)" class="z-HReturn"><s></s><b>返回</b></a>
+        </div>
+        <h2>收货地址</h2>
+        <div class="head-r">
+          <a href="{WEB_PATH}/mobile/mobile" class="z-Home"></a>
+        </div>
+    </header>
+  {wc:if $count==0}
+  <!-- <form method="POST" action="{WEB_PATH}/mobile/home/useraddress">-->
+        <section class="no_address">
+         <input type="hidden" dataUrl="{WEB_PATH}/mobile/home/useraddress" id="url_address"/> 
+        <div class="registerCon">
+         <script>var s=["province","city","county"];</script>
+          <ul>
+              <li><input type="text" id="ren" name="shouhuoren" placeholder="收货人" ></s>
+        </li>
+              <li><input id="userMobile" type="mobile" name="mobile" placeholder="请输入手机号码" ></s>
+        </li>
+        <li><input type="text" id="qq" name="qq" placeholder="请输入你的QQ号" ></s>
+        </li>
+        <li><input type="text" id="youbian" name="youbian" placeholder="请输入邮政编码" ></s>
+        </li>
+                <li class="adress1" id="tishi_1">
+                <span id="tishi_2">省份</span>
+                    <s class="ss" placeholder="省份"></s>
+                        <select id="province" name="省份">
+
+                        
+                        </select>     
+    
+                </li>
+                  <li class="adress2" id="tishi_1">
+                     <span id="tishi_3">市区</span>
+                    <s class="ss"></s>
+                        <select id="city">
+                          <!-- <option value ="请选择省份">请选择省份</option>-->
+                        </select>        
+                </li>
+                  <li class="adress3" id="tishi_1">
+                        <span id="tishi_4">县乡</span>
+                    <s class="ss"></s>
+                        <select id="county">
+                      
+                        </select>        
+                </li>
+        <li><input type="text" id="jiedao" name="jiedao" placeholder="请输入详细地址" ></s>
+        </li>
+      
+               <li><input type="button" id="submit" class='baocun'  value="保存"/></li>
+            </ul>
+            <script type="text/javascript">setup()</script>
+        </div>
+        </section>
+     <!--   </form>-->
+        {wc:else}
+        <div id="address_list">
+        {wc:loop $member_dizhi $dizhi}
+         <section>
+          <div class="registerCon">
+           
+            <ul>
+                <li id="shr_{wc:$dizhi[id]}">收货人：{wc:$dizhi['shouhuoren']}</s>
+          </li>
+                <li id="mob_{wc:$dizhi[id]}">手机号码：{wc:$dizhi['mobile']}</s>
+          </li>
+          <li id="yb_{wc:$dizhi[id]}">邮政编码：{wc:$dizhi['youbian']}</s>
+          </li>
+           <li id="qq_{wc:$dizhi[id]}">QQ号：{wc:$dizhi['qq']}</s>
+          </li>
+          <li id="dizhi_{wc:$dizhi[id]}">详细地址：{wc:$dizhi['sheng']}{wc:$dizhi['shi']}{wc:$dizhi['xian']}{wc:$dizhi['jiedao']}</s>
+          </li>
+                 <li class="button_a"><input type="button" id='replace' class="update" onclick="update({wc:$dizhi[id]},this)" value="修改"/>
+                        <input  class='del' type="button" id='delete'  value="删除" dataUrl="{WEB_PATH}/mobile/home/deleteaddress"  onclick="deleted({wc:$dizhi[id]},{wc:$uid})"/>
+                        {wc:if $dizhi['default'] == 'N'}
+                             <input class='def' type="button" id='default' onclick="setdefault({wc:$dizhi[id]},this)" value="设为默认"/>
+                        {wc:else}
+                            <input class='def' type="button" id='default' style="background:#fff;color:#999"  value="默认地址"/>
+                        {wc:if:end}
+                   </li>   
+              </ul>
+            </div>
+           
+        </section>
+        {wc:loop:end}
+        </div>
+        {wc:if:end}
+        <!-- 修改start -->
+        <section>
+             <div class="registerCon2" style="display:none">
+             <input type="hidden" dataUrl="{WEB_PATH}/mobile/home/updateaddress" id="url_address3"/> 
+         <script>var s3=["province3","city3","county3"];</script>
+            <ul>
+                <li><input type="text" id="ren3" name="shouhuoren"  ></s>
+                </li>
+                <li><input id="userMobile3" type="mobile" name="mobile" ></s>
+                </li>
+                <li><input type="text" id="qq3" name="qq"  ></s>
+                </li>
+                <li><input type="text" id="youbian3" name="youbian" ></s>
+                </li>
+                <li class="adress1">
+                    <s class="ss"></s>
+                        <select id="province3">
+                          
+                        </select>        
+                </li>
+                  <li class="adress2">
+                    <s class="ss"></s>
+                        <select id="city3">
+                           
+                        </select>        
+                </li>
+                  <li class="adress3">
+                    <s class="ss"></s>
+                        <select id="county3">
+                      
+                        </select>        
+                </li>
+                <li><input type="text" id="jiedao3" name="jiedao" placeholder="请输入详细地址" ></s>
+                </li>
+            
+               <li><input type="button" id="submit3" class='baocun' value="保存"/></li>
+            </ul>
+        </div>
+        </section>
+        <!--修改end-->
+        <!--添加start-->
+        <section class="no_address" style="display:none">
+         <input type="hidden" dataUrl="{WEB_PATH}/mobile/home/useraddress" id="url_address"/> 
+        <div class="registerCon">
+         <script>var s2=["province2","city2","county2"];</script>
+          <ul>
+              <li><input type="text" id="ren2" name="shouhuoren" placeholder="收货人" ></s>
+        </li>
+              <li><input id="userMobile2" type="mobile" name="mobile" placeholder="请输入手机号码" ></s>
+        </li>
+        <li><input type="text" id="qq2" name="qq" placeholder="请输入你的QQ号" ></s>
+        </li>
+        <li><input type="text" id="youbian2" name="youbian" placeholder="请输入邮政编码" ></s>
+        </li>
+                <li class="adress1" >
+                    <s class="ss"></s>
+                        <select id="province2" >
+                          
+                        </select>        
+                </li>
+                  <li class="adress2">
+                    <s class="ss"></s>
+                        <select id="city2">
+                           
+                        </select>        
+                </li>
+                  <li class="adress3">
+                    <s class="ss"></s>
+                        <select id="county2">
+                      
+                        </select>        
+                </li>
+        <li><input type="text" id="jiedao2" name="jiedao" placeholder="请输入详细地址" ></s>
+        </li>
+      
+               <li><input type="button" id="submit2" class='baocun' value="保存"/></li>
+            </ul>
+            <script type="text/javascript">setup2()</script>
+        </div>
+        </section>
+        <!--添加end-->
+        {wc:if $count>0 && $count<5}
+        <section class="addbutton">
+             <input type="button" id='add'  value="添加"/>
+        </section>
+        {wc:if:end}
+        
+{wc:templates "mobile/index","footer"}
+<script language="javascript" type="text/javascript">
+
+ function deleted(id,uid){
+    if(confirm("是否删除？")){
+        var _list = [];
+        url = $("input[class=del]").attr("dataUrl");
+          _list.push(id,uid);
+          console.log(url)            
+          $.ajax(
+            {
+               type:"POST",
+               url: url,
+               data:{"del":_list},
+               dataType:"json",
+               success:function(r){
+                  if(r.status == 0){
+                            window.location.href="{WEB_PATH}/mobile/home/results/error";
+                        }
+                        if(r.status == 1){
+                            window.location.reload();
+                        }
+                        if(r.status == 2){
+                            window.location.href="{WEB_PATH}/mobile/home/results/delete";
+                        }
+               }
+            })
+        }
+     
+    }
+
+$(function(){
+
+  //比如说，我点击需要把地址放入input，那么我就把 全局变量的地址循环出来放入input框里面。
+
+  /*
+     var input = "";
+     循环 _jsonlist[点击的下标]  {
+        input += "<input value='_jsonlist[点击的下标].value'>";
+    
+     }
+
+     $("需要放入的DIV").html(input);
+
+  */
+
+
+    $("#submit2").click(function(){
+          sheng2 = document.getElementById("province2").value;
+          shi2 = document.getElementById("city2").value;
+          xian2 = document.getElementById("county2").value;
+          stc(sheng2,shi2,xian2);
+    })
+
+    $("#submit").bind({
+      click:function(){
+        stc();
+      }
+    })
+
+     var stc = function(sheng2,shi2,xian2){
+            var _list = []
+            if(sheng2 && shi2 && xian2){
+                _list.push($("#ren2").val(),$("#userMobile2").val(),$("#qq2").val(),$("#youbian2").val())
+                _list.push(sheng2,shi2,xian2,$("#jiedao2").val());
+            }else{
+                sheng = document.getElementById("province").value;
+                shi = document.getElementById("city").value
+                xian = document.getElementById("county").value
+                _list.push($("#ren").val(),$("#userMobile").val(),$("#qq").val(),$("#youbian").val())
+                _list.push(sheng,shi,xian,$("#jiedao").val());
+            }
+               
+               var url = $("#url_address").attr("dataUrl");
+               console.log(_list)
+               // var UserJson = [$("#ren").val(), $("#userMobile").val(), $("#qq").val(),$("#youbian").val(),$("#jiedao").val(),sheng,shi,xian]
+                $.ajax({
+                     type: "POST",
+                     url: url,
+                     data: {"Data[]":_list},
+                     dataType: "json",
+                     success:function(data){
+                        if(data.status == 0){
+                            window.location.href="{WEB_PATH}/mobile/home/results/error";
+                        }
+                        if(data.status == 1){
+                            window.location.href="{WEB_PATH}/mobile/home/results/result/1";
+                        }
+                        if(data.status == 2){
+                            window.location.href="{WEB_PATH}/mobile/home/results/result/0";
+                        }
+                     }
+                 });
+            }
+
+    $("#add").bind("click",function(){
+       $(".no_address").show();
+       $(".registerCon2").hide();
+       $("#aa").hide();
+       $(this).hide();
+       $(".update").css({
+        "background":'#f60',
+        "color":"#fff"
+      });
+    })
+});
+
+</script>
+ 
+    </div>
+</body>
+</html>
