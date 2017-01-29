@@ -265,7 +265,7 @@ function templates($module = '', $template = '',$StyleTheme=''){
 			$style=$templates['dir'].DIRECTORY_SEPARATOR.$templates['html'];
 		}
 		$FileTpl = G_CACHES.'caches_template'.DIRECTORY_SEPARATOR.dirname($style).DIRECTORY_SEPARATOR.md5($module.'.'.$template).'.tpl.php';	
-		$FileHtml = G_TEMPLATES.$style.DIRECTORY_SEPARATOR.$module.'.'.$template.'.html';	
+		$FileHtml = G_TEMPLATES.$style.DIRECTORY_SEPARATOR.$module.'.'.$template.'.html';
 		if(file_exists($FileHtml)){		
 			if (file_exists($FileTpl) && @filemtime($FileTpl) >= @filemtime($FileHtml)) {					
 				return $FileTpl;			

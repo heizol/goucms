@@ -24,7 +24,7 @@
 <?php include templates("mobile/index","top");?>
 <!-- 内页顶部 -->
 
-    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="<?php echo $itemlist['0']['q_uid']; ?>"/>   <!--上期获奖者id-->
+    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="<?php if(!empty($itemlist[0]['q_uid'])): ?><?php echo $itemlist['0']['q_uid']; ?><?php endif; ?>"/>   <!--上期获奖者id-->
     <input name="hidCodeID" type="hidden" id="hidCodeID" value="<?php echo $item['id']; ?>"/>     <!--本期商品id-->
     <section class="goodsCon pCon">
 	    <!-- 导航 -->

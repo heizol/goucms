@@ -58,9 +58,25 @@ final class template_cache {
 		//变量标签
 		$this->content = preg_replace ( "/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\}/", "<?php echo \\1; ?>", $this->content );		
 		$this->content = preg_replace ( "/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*([\+\-\*\/])\s*(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\}/", "<?php echo \\1\\2\\3; ?>", $this->content );										
-		$this->content = preg_replace ("/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)([\$a-zA-Z_0-9\[\]\'\"\$\x7f-\xff]+)\}/es", "\$this->addquote('<?php echo \\1\\2; ?>')",$this->content);
+		/*
+		$this->content = preg_replace_callback ("/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)([\$a-zA-Z_0-9\[\]\'\"\$\x7f-\xff]+)\}/es",
+		    "\$this->addquote('<?php echo \\1\\2; ?>')",
+		    $this->content);
+		
 		$this->content = preg_replace ("/\{$stag:([a-zA-Z_0-9\[\]\'\"\$\x7f-\xff\+\-\*\/]+)\}/es", "\$this->addquote('<?php echo \\1; ?>')",$this->content);
-										
+		*/
+		$this->content = preg_replace_callback ("/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)([\$a-zA-Z_0-9\[\]\'\"\$\x7f-\xff]+)\}/s",
+		    function ($matches) {
+		        return $this->addquote('<?php echo ' . $matches[1] . $matches[2] .'; ?>');
+		    },
+		    $this->content);
+		unset ($matches);
+		$this->content = preg_replace_callback ("/\{$stag:([a-zA-Z_0-9\[\]\'\"\$\x7f-\xff\+\-\*\/]+)\}/s", 
+		    function ($matches) {
+		        return $this->addquote('<?php echo ' . $matches[1].'; ?>');
+		    },
+		    $this->content);
+		unset ($matches);
 		$this->content = preg_replace ( "/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)--\}/", "<?php echo \\1--; ?>", $this->content);	
 		$this->content = preg_replace ( "/\{$stag:(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)++\}/", "<?php echo \\1++; ?>", $this->content);
 		
@@ -74,15 +90,40 @@ final class template_cache {
 		
 		
 		//保留标签标签
+		/*
 		$this->content = preg_replace ( "/\{$stag:(\w+)\s+([^}]+)\}/ie", "self::pc_tag_html('$1','$2', '$0')", $this->content);
 		$this->content = preg_replace ( "/\{$stag:(\w+):$etag\}/ie", "self::end_html_tag('$1','$0')",$this->content);
-		
-		
-		//模块调用标签		
-		//$this->content = preg_replace ( "/\{$stag:m=(\w+) mod=[\"|\'](\w+)[\"|\']([^}]+)\}/ie", "self::pc_module_tag('$1','$2', '$3')", $this->content);		
+		*/
+		$this->content = preg_replace_callback ( "/\{$stag:(\w+)\s+([^}]+)\}/i", 
+		    function ($matches) {
+		        // return "self::pc_module_tag('{$matches[1]}', '{$matches[2]}', '{$matches[0]}');";
+		    },
+		    $this->content);
+		unset($matches);
+		$this->content = preg_replace_callback ( "/\{$stag:(\w+):$etag\}/i", 
+		    function ($matches) {
+		        // return "self::end_html_tag('{$matches[1]}', '{$matches[0]}');";
+		    },
+		    $this->content);
+		unset($matches);
+		//模块调用标签	
+		/*
 		$this->content = preg_replace ( "/\{$stag:m=(\w+\.\w+) mod=(\w+\((.*)\))([^}]*)\}/ie", "self::pc_module_tag('$1','$2','$3','$4')", $this->content);
 			
-		$this->content = preg_replace ( "/\{$stag:m=(\w+):$etag\}/ie", "self::end_module_tag('$1','$0')",$this->content);		
+		$this->content = preg_replace ( "/\{$stag:m=(\w+):$etag\}/ie", "self::end_module_tag('$1','$0')",$this->content);
+		*/
+		$this->content = preg_replace_callback ( "/\{$stag:m=(\w+\.\w+) mod=(\w+\((.*)\))([^}]*)\}/i", 
+		    function ($matches) {
+		        // return "self::pc_module_tag('{$matches[1]}', '{$matches[2]}', '{$matches[3]}', '{$matches[4]}');";
+		    },
+		    $this->content);
+		unset($matches);
+		$this->content = preg_replace_callback ( "/\{$stag:m=(\w+):$etag\}/i",
+		    function ($matches) {
+		        // return "self::end_module_tag ('{$matches[1]}', '{$matches[2]}');";
+		    },
+		    $this->content);
+		
 		$this->content='<?php defined(\'G_IN_SYSTEM\')or exit(\'No permission resources.\'); ?>'.$this->content;
 		
 	}

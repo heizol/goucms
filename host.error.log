@@ -1158,3 +1158,956 @@ PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCM
 PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
 PHP message: PHP   7. index->Tdefault() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
 PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/sysmana/index.action.php:84" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/sysmana/index/Tdefault HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/sysmana/index"
+2017/01/29 20:20:12 [error] 10513#0: *453 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 61
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:72
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:61
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 62
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.cl
+2017/01/29 20:20:12 [error] 10513#0: *453 FastCGI sent in stderr: "ile/mobile.action.php:72
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:72
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback inste
+2017/01/29 20:20:12 [error] 10513#0: *453 FastCGI sent in stderr: "
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:72
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086"
+2017/01/29 20:22:40 [error] 10513#0: *523 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 61
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->lottery() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:415
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:61
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 62
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/syste
+2017/01/29 20:22:40 [error] 10513#0: *523 FastCGI sent in stderr: "modules/mobile/mobile.action.php:415
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->lottery() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:415
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replac
+2017/01/29 20:22:40 [error] 10513#0: *523 FastCGI sent in stderr: "ication.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->lottery() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:415
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/lottery HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 20:40:05 [error] 10513#0: *534 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:40:45 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:40:55 [error] 10513#0: *534 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:42:03 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:43:06 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:43:46 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:44:41 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:44:52 [error] 10513#0: *537 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:45:59 [error] 10513#0: *557 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:46:28 [error] 10513#0: *557 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:47:14 [error] 10513#0: *557 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:47:37 [error] 10513#0: *557 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:49:00 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:49:02 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:49:48 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 78
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:78" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:50:26 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:50:27 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 77
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:77" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/about HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/lottery"
+2017/01/29 20:51:07 [error] 10513#0: *562 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:94
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 95
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.
+2017/01/29 20:51:07 [error] 10513#0: *562 FastCGI sent in stderr: "es/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:100
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 102
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->about() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:497
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:102" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GE
+2017/01/29 20:57:34 [error] 10513#0: *574 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 20:58:08 [error] 10513#0: *574 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 20:58:16 [error] 10513#0: *574 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 20:59:09 [error] 10513#0: *574 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 20:59:34 [error] 10513#0: *574 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:02:23 [error] 10513#0: *650 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 95
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:95
+PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 96
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.c
+2017/01/29 21:02:23 [error] 10513#0: *650 FastCGI sent in stderr: ".action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:110" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:04:14 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 103
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:103" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:04:15 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 103
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:103" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:04:39 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Parse error:  parse error in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 107
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:273" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:05:14 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:05:33 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:06:04 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:06:20 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:06:44 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:07:02 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:07:04 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:07:45 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:08:15 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class Closure could not be converted to string in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27
+PHP message: PHP  11. preg_replace() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:104" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:08:51 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:08:54 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:09:09 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:10:12 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: matches in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 104
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:12:00 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: matches in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 124
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:12:14 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: matches in /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php on line 124
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. templates() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP   9. template_cache->template_init() /Users/new/system/workdir/gouCMS/system/funcs/global.fun.php:282
+PHP message: PHP  10. template_cache->template_parse() /Users/new/system/workdir/gouCMS/system/libs/template_cache.class.php:27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:12:48 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:13:27 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:14:15 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:15:37 [error] 10513#0: *652 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:16:36 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:271
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:16:38 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:271
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:17:17 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php on line 239
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php on line 239
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/
+2017/01/29 21:17:17 [error] 10513#0: *702 FastCGI sent in stderr: "rkdir/gouCMS/system/modules/mobile/mobile.action.php:268
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 213
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:268" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:18:19 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:268
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:18:38 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:268
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:19:14 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:19:27 [error] 10513#0: *702 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:269
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:19:50 [error] 10513#0: *705 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:268
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/
+2017/01/29 21:26:42 [error] 10513#0: *743 FastCGI sent in stderr: "PHP message: PHP Parse error:  parse error in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /?/mobile/mobile/item/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1:8086", referrer: "http://127.0.0.1:8086/?/mobile/mobile/glist"
+2017/01/29 21:26:54 [error] 10513#0: *743 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 207
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   7. mobile->item() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:29
+PHP message: PHP   8. include() /Users/new/system/workdir/gouCMS/system/modules/mobile/mobile.action.php:268
+PHP message: PHP Notice:  Undefined offset: 0 in /Users/new/system/workdir/gouCMS/system/caches/caches_template/templet2/9a0e7922b5cbf2f52a3e7839a6c31ec7.tpl.php on line 213
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /Users/new/system/workdir/gouCMS/index.php:0
+PHP message: PHP   2. System::CreateApp() /Users/new/system/workdir/gouCMS/index.php:61
+PHP message: PHP   3. System::load_sys_class() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:189
+PHP message: PHP   4. application->__construct() /Users/new/system/workdir/gouCMS/system/libs/system.class.php:28
+PHP message: PHP   5. application->global_init() /Users/new/system/workdir/gouCMS/system/libs/application.class.php:19
+PHP message: PHP   6. call_user_func:{/Users/new/system/workdir/gouCMS/system/libs/application.class.php:29}() /Users/new/system/workdir/gouCMS/system/libs

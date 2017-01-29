@@ -24,7 +24,7 @@
 {wc:templates "mobile/index","top"}
 <!-- 内页顶部 -->
 
-    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="{wc:$itemlist[0]['q_uid']}"/>   <!--上期获奖者id-->
+    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="{wc:if !empty($itemlist[0]['q_uid'])}{wc:$itemlist[0]['q_uid']}{wc:if:end}"/>   <!--上期获奖者id-->
     <input name="hidCodeID" type="hidden" id="hidCodeID" value="{wc:$item['id']}"/>     <!--本期商品id-->
     <section class="goodsCon pCon">
 	    <!-- 导航 -->

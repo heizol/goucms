@@ -220,24 +220,23 @@ class mobile extends base {
 		$loopqishu='';
 		$loopqishu.='<li class="cur"><a href="javascript:;">'."第".$item['qishu']."期</a><b></b></li>";
 		 
-		if(empty($itemlist)){
-		foreach($itemlist as $qitem){			
-			$loopqishu.='<li><a href="'.WEB_PATH.'/mobile/mobile/item/'.$qitem['id'].'" class="">第'.$qitem['qishu'].'期</a></li>';		
-			
-		}}
-		
-		foreach($itemlist as $qitem){
-			if($qitem['id'] == $itemid){
-				
-				$loopqishu.='<li class="cur"><a href="javascript:;">'."第".$itemlist[0]['qishu']."期</a><b></b></li>";
-			}else{				
-				$loopqishu.='<li><a href="'.WEB_PATH.'/mobile/mobile/dataserver/'.$qitem['id'].'" >第'.$qitem['qishu'].'期</a></li>';		
-			}
-		}
-		$gorecode=array();
-		if(!empty($itemlist)){ 
-		//查询上期的获奖者信息
-		$gorecode=$this->db->GetOne("select * from `@#_member_go_record` where `shopid`='".$itemlist[0]['id']."' AND `shopqishu`='".$itemlist[0]['qishu']."' ORDER BY id DESC LIMIT 1");
+		if(!empty($itemlist)){
+    		foreach($itemlist as $qitem){			
+    			$loopqishu.='<li><a href="'.WEB_PATH.'/mobile/mobile/item/'.$qitem['id'].'" class="">第'.$qitem['qishu'].'期</a></li>';		
+    			
+    		}
+    		
+    		foreach($itemlist as $qitem){
+    			if($qitem['id'] == $itemid){
+    				
+    				$loopqishu.='<li class="cur"><a href="javascript:;">'."第".$itemlist[0]['qishu']."期</a><b></b></li>";
+    			}else{				
+    				$loopqishu.='<li><a href="'.WEB_PATH.'/mobile/mobile/dataserver/'.$qitem['id'].'" >第'.$qitem['qishu'].'期</a></li>';		
+    			}
+    		}
+    		$gorecode=array();
+    		//查询上期的获奖者信息
+    		$gorecode=$this->db->GetOne("select * from `@#_member_go_record` where `shopid`='".$itemlist[0]['id']."' AND `shopqishu`='".$itemlist[0]['qishu']."' ORDER BY id DESC LIMIT 1");
 		}
 		
 		//echo "<pre>";

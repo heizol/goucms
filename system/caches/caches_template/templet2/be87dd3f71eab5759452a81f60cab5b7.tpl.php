@@ -168,8 +168,7 @@
 			                <div class="m-tj-pic">
 			                    <a href="<?php echo WEB_PATH; ?>/mobile/mobile/item/<?php echo $renqi['id']; ?>" class="u-lott-pic">
 			                        <img src="<?php echo G_TEMPLATES_IMAGE; ?>/loading.gif" src2="<?php echo G_UPLOAD_PATH; ?>/<?php echo $renqi['thumb']; ?>" border=0 alt="" />
-			                    </a>
-								<a href="<?php echo WEB_PATH; ?>/mobile/mobile/item/<?php echo $renqi['id']; ?>" class="u-lott-pic"><?php echo $renqi['title']; ?></a>
+			                    </a>								
 			                    <ins class="u-promo">价值:￥<?php echo $renqi['money']; ?></ins>
 			                </div>
 			                <div class="Progress-bar">
