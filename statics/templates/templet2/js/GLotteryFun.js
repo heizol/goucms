@@ -99,14 +99,14 @@
 							arr : new Array()
 						};
 					}
-					$.get(GG_SHOP_TIME.path+"/api/getshop/lottery_shop_json/"+new Date().getTime(),{'gid':GG_SHOP_TIME.gid},function(indexData){					
-						var info = jQuery.parseJSON(indexData);									
-							if(info.error == '0' && info.id != 'null'){							
-								if(!GG_SHOP_TIME.arr[info.id]){
-											GG_SHOP_TIME.gid =  GG_SHOP_TIME.gid +'_'+info.id;		
-											GG_SHOP_TIME.arr[info.id] = true;											
-											gg_show_time_add_li(GG_SHOP_TIME.div,GG_SHOP_TIME.path,info);							
-								}			
-							}			
-					});							
+//					$.get(GG_SHOP_TIME.path+"/api/getshop/lottery_shop_json/"+new Date().getTime(),{'gid':GG_SHOP_TIME.gid},function(indexData){					
+//						var info = jQuery.parseJSON(indexData);									
+//							if(info.error == '0' && info.id != 'null'){							
+//								if(!GG_SHOP_TIME.arr[info.id]){
+//											GG_SHOP_TIME.gid =  GG_SHOP_TIME.gid +'_'+info.id;		
+//											GG_SHOP_TIME.arr[info.id] = true;											
+//											gg_show_time_add_li(GG_SHOP_TIME.div,GG_SHOP_TIME.path,info);							
+//								}			
+//							}			
+//					});							
 				}
