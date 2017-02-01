@@ -28,48 +28,50 @@ class mobile extends base {
 	
 	//首页
 	public function init(){	
-			$webname=$this->_cfg['web_name'];
+// 			$webname=$this->_cfg['web_name'];
  
 		
-		//人气商品
-		$shoplistrenqi=$this->db->GetList("select * from `@#_shoplist` where `renqi`='1' and `q_end_time` is null ORDER BY id DESC LIMIT 6");
+// 		//人气商品
+// 		$shoplistrenqi=$this->db->GetList("select * from `@#_shoplist` where `renqi`='1' and `q_end_time` is null ORDER BY id DESC LIMIT 6");
 	
-		$max_renqi_qishu = 1;
-		$max_renqi_qishu_id = 1;
+// 		$max_renqi_qishu = 1;
+// 		$max_renqi_qishu_id = 1;
 		
-		if(!empty($shoplistrenqi)){
-			foreach ($shoplistrenqi as $renqikey =>$renqiinfo){
-				if($renqiinfo['qishu'] >= $max_renqi_qishu){			
-					$max_renqi_qishu = $renqiinfo['qishu'];
-					$max_renqi_qishu_id = $renqikey;				
-				}		
-			}	
-			$shoplistrenqi[$max_renqi_qishu_id]['t_max_qishu'] = 1;	
-		}				
-		$this_time = time();
-		if(count($shoplistrenqi) > 1){
-					if($shoplistrenqi[0]['time'] > $this_time - 86400*3)
-					$shoplistrenqi[0]['t_new_goods'] = 1;
-		}
+// 		if(!empty($shoplistrenqi)){
+// 			foreach ($shoplistrenqi as $renqikey =>$renqiinfo){
+// 				if($renqiinfo['qishu'] >= $max_renqi_qishu){			
+// 					$max_renqi_qishu = $renqiinfo['qishu'];
+// 					$max_renqi_qishu_id = $renqikey;				
+// 				}		
+// 			}	
+// 			$shoplistrenqi[$max_renqi_qishu_id]['t_max_qishu'] = 1;	
+// 		}				
+// 		$this_time = time();
+// 		if(count($shoplistrenqi) > 1){
+// 					if($shoplistrenqi[0]['time'] > $this_time - 86400*3)
+// 					$shoplistrenqi[0]['t_new_goods'] = 1;
+// 		}
 		
 		
-		$w_jinri_time = strtotime(date('Y-m-d'));
-		$w_minri_time = strtotime(date('Y-m-d',strtotime("+1 day")));
+// 		$w_jinri_time = strtotime(date('Y-m-d'));
+// 		$w_minri_time = strtotime(date('Y-m-d',strtotime("+1 day")));
 	
 
 		
 		
-		//最新揭晓
-		$currentTime = time();
-		$shopqishu=$this->db->GetList("select * from `@#_shoplist` where `q_end_time` !='' and `q_end_time` < '$currentTime' ORDER BY `q_end_time` DESC LIMIT 4");
+// 		//最新揭晓
+// 		$currentTime = time();
+// 		$shopqishu=$this->db->GetList("select * from `@#_shoplist` where `q_end_time` !='' and `q_end_time` < '$currentTime' ORDER BY `q_end_time` DESC LIMIT 4");
 		
 		
-		$jinri_shoplist = $this->db->GetList("select * from `@#_shoplist` where `xsjx_time` > '$w_jinri_time' and `xsjx_time` < '$w_minri_time' order by xsjx_time limit 0,3 ");
+// 		$jinri_shoplist = $this->db->GetList("select * from `@#_shoplist` where `xsjx_time` > '$w_jinri_time' and `xsjx_time` < '$w_minri_time' order by xsjx_time limit 0,3 ");
 		
 		
 		
-         $key="首页";
-		include templates("mobile/index","index");
+//          $key="首页";
+// 		include templates("mobile/index","index");
+
+        
 	}	
 	
 	//商品列表
