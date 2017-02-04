@@ -8,13 +8,11 @@ System::load_sys_fun('user');
 class home extends base {
 	public function __construct(){ 
 		parent::__construct();
-		if(ROUTE_A!='userphotoup' and ROUTE_A!='singphotoup'){
-			if(!$this->userinfo)_message("请登录",WEB_PATH."/mobile/mobile",3);
-		}		
 		$this->db = System::load_sys_class('model');
 		
 	}
 	public function init(){
+	    $user_id = $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$member=$this->userinfo;
 		$title="我的云购中心";	
@@ -36,6 +34,7 @@ class home extends base {
 	}
   
 	function invite(){
+	    $user_id = $this->getUserId();
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
         $title="我的云购中心";
@@ -56,6 +55,7 @@ class home extends base {
     }
 	/*收货地址*/
 	function address(){
+	    $user_id = $this->getUserId();
         $webname=$this->_cfg['web_name'];
         $mysql_model=System::load_sys_class('model');
         $member=$this->userinfo;
@@ -71,6 +71,7 @@ class home extends base {
     }
 	  
     public function deleteaddress(){
+        $user_id = $this->getUserId();
     	 $mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
         $uid = $member['uid'];
@@ -104,6 +105,7 @@ class home extends base {
     }
 
     public function updateaddress(){
+        $user_id = $this->getUserId();
     	 $mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
         $uid = $member['uid'];
