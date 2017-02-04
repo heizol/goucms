@@ -10,6 +10,7 @@ class mobile extends base {
 	public function __construct() {
 	    session_start();
 		parent::__construct();
+		$user_id = $this->getUserId();
 		$this->db=System::load_sys_class('model');
 				
 	}	
@@ -29,6 +30,7 @@ class mobile extends base {
 	
 	//首页
 	public function init(){	
+	    header("Location: /?/mobile/mobile/glist");
 // 			$webname=$this->_cfg['web_name'];
  
 		
@@ -71,13 +73,6 @@ class mobile extends base {
 		
 //          $key="首页";
 // 		include templates("mobile/index","index");
-        $user_id = $this->getUserId();
-        if ($user_id) {
-            header("Location: /?/mobile/mobile/glist");
-        } else {
-            echo '该平台只能在微信中登录';
-        }
-        exit;
 	}
 	
 	/**
@@ -87,7 +82,7 @@ class mobile extends base {
 	    $user_id = $_SESSION['user_id'];
 	    if (empty($user_id)) {
 	        // 跳转微信
-	        $app_id = Yii::$app->params['wx_appid'];
+	        $app_id = WX_APPID; // Yii::$app->params['wx_appid'];
 	        $redirect_uri = 'http://duobao.joinear.com/?/mobile/mobile/callWxBack';
 	        $scope = 'snsapi_userinfo'; // SCOPE
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
