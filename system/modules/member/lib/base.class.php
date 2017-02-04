@@ -61,9 +61,7 @@ class base extends SystemAction {
 	        $redirect_uri = 'http://duobao.joinear.com/mobile/mobile/callWxBack';
 	        $scope = 'snsapi_userinfo'; // SCOPE
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
-	        echo $wx_url;
-	        exit;
-	        //header("Location:" . $wx_url);
+	        header("Location:" . $wx_url);
 	    } else {
 	        echo $user_id . '==';
 	    }
@@ -102,6 +100,7 @@ class base extends SystemAction {
 	    $user_obj = json_decode($res, true);
 	    
 	    var_dump($user_obj);
+	    exit;
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
 	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
 	
