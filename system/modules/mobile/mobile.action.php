@@ -67,8 +67,6 @@ class mobile extends base {
 	//商品列表
 	public function glist(){
 	    $_SESSION['haha'] = 'world';
-	    print_r($_SESSION);
-        exit;
 	    $this->getUserId();
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
