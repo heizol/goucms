@@ -7,7 +7,8 @@ System::load_sys_fun('user');
 
 class mobile extends base {
 	
-	public function __construct() {	
+	public function __construct() {
+	    session_start();
 		parent::__construct();
 		$this->db=System::load_sys_class('model');
 				
@@ -70,9 +71,82 @@ class mobile extends base {
 		
 //          $key="首页";
 // 		include templates("mobile/index","index");
-
         
-	}	
+        
+	}
+	
+	/**
+	 * @desc 限制微信登录
+	 */
+	public function getUserId() {
+	    $user_id = $_SESSION['user_id'];
+	    if (empty($user_id)) {
+	        // 跳转微信
+	        $app_id = Yii::$app->params['wx_appid'];
+	        $redirect_uri = 'http://duobao.joinear.com/?/mobile/mobile/callWxBack';
+	        $scope = 'snsapi_userinfo'; // SCOPE
+	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
+	        header("Location:" . $wx_url);
+	    } else {
+	        return $user_id;
+	    }
+	}
+	
+	public function callWxBack() {
+	    $appid = yii::$app->params['wx_appid']; //"wx312453bf54f34f20";
+	    $secret = yii::$app->params['wx_appsecret']; //"ea1c8feb90b29e39a967ca73ca2bd1e4";
+	    $code = trim(htmlentities($_GET["code"]));
+	    
+	    $get_token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$secret.'&code='.$code.'&grant_type=authorization_code';
+	    $ch = curl_init();
+	    curl_setopt($ch,CURLOPT_URL,$get_token_url);
+	    curl_setopt($ch,CURLOPT_HEADER,0);
+	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );
+	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+	    $res = curl_exec($ch);
+	    curl_close($ch);
+	    $json_obj = json_decode($res,true);
+	    $access_token = $json_obj['access_token'];
+	    $openid = $json_obj['openid'];
+	    
+	    $get_user_info_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='.$access_token.'&openid='.$openid.'&lang=zh_CN';
+	    $ch = curl_init();
+	    curl_setopt($ch, CURLOPT_URL, $get_user_info_url);
+	    curl_setopt($ch, CURLOPT_HEADER, 0);
+	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+	    $res = curl_exec($ch);
+	    curl_close($ch);
+	    
+	    $user_obj = json_decode($res, true);
+	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
+	        $_obj = new SetDataModel();
+	        $get_where = 'openid = "'. $user_obj['openid'] .'"';
+	        $_user_obj = $_obj->getData('user_list', $get_where);
+	        $get_wx_info = array();
+	        $get_wx_info['openid'] = $user_obj['openid'];
+	        $get_wx_info['user_name'] = $user_obj['nickname'];
+	        $get_wx_info['user_sex'] = $user_obj['sex'];
+	        $get_wx_info['user_photo'] = $user_obj['headimgurl'];
+	        if (empty($_user_obj)) {
+	            $get_wx_info['add_time'] = date("Y-m-d H:i:s");
+	            $get_wx_info['login_time'] = date("Y-m-d H:i:s");
+	            $id = $_obj->setData('user_list', $get_wx_info);
+	        } else {
+	            $id = $_user_obj[false]['id'];
+	            $set_columns = array();
+	            $set_columns['login_time'] = date("Y-m-d H:i:s");
+	            $_obj->setData('user_list', $set_columns, $id);
+	        }
+	        yii::$app->session['user_id'] = $id;
+	        yii::$app->session['user_name'] = $user_obj['nickname'];
+	        return $this->redirect('/index.php?r=desk/index');
+	    } else {
+	        echo '该平台只能在微信中登录';
+	        exit;
+	    }
+	     
+	}
 	
 	//商品列表
 	public function glist(){
