@@ -15,7 +15,6 @@ class mobile extends base {
 
 	//首页
 	public function init(){
-	    print_r($_SERVER);
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback')) {
 	        $this->callwxback($_GET['code']);
 	    }
@@ -100,8 +99,6 @@ class mobile extends base {
 	
 	    $user_obj = json_decode($res, true);
 	     
-	    var_dump($user_obj);
-	    exit;
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
 	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
 	
@@ -124,10 +121,7 @@ class mobile extends base {
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
-	        var_dump($_SESSION);
-	        echo 'hellowr';
-	        exit;
-	        // 	        return $this->redirect('/?/mobile/mobile/glist');
+	        return $this->redirect('/?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
