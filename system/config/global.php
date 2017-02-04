@@ -289,6 +289,9 @@ if (function_exists("set_time_limit") == TRUE AND @ini_get("safe_mode") == 0)
 }
 
 
+define('WX_APPID', 'wx312453bf54f34f20');
+define('WX_APPSECRET', 'ea1c8feb90b29e39a967ca73ca2bd1e4');
+
 /*
  *---------------------------------------------------------------
  *	CHARSET set

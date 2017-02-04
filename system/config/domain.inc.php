@@ -1,7 +1,7 @@
 <?php 
 
 return array (
-  'mv3.yungoucms.cn' => 
+  'duobao.joinear.com' => 
   array (
     'm' => 'mobile',
     'c' => 'mobile',

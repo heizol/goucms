@@ -9,7 +9,7 @@ class home extends base {
 	public function __construct(){ 
 		parent::__construct();
 		if(ROUTE_A!='userphotoup' and ROUTE_A!='singphotoup'){
-			if(!$this->userinfo)_message("请登录",WEB_PATH."/mobile/user/login",3);
+			if(!$this->userinfo)_message("请登录",WEB_PATH."/mobile/mobile",3);
 		}		
 		$this->db = System::load_sys_class('model');
 		

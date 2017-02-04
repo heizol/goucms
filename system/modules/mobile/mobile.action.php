@@ -71,8 +71,13 @@ class mobile extends base {
 		
 //          $key="首页";
 // 		include templates("mobile/index","index");
-        
-        
+        $user_id = $this->getUserId();
+        if ($user_id) {
+            header("Location: /?/mobile/mobile/glist");
+        } else {
+            echo '该平台只能在微信中登录';
+        }
+        exit;
 	}
 	
 	/**
@@ -93,8 +98,8 @@ class mobile extends base {
 	}
 	
 	public function callWxBack() {
-	    $appid = yii::$app->params['wx_appid']; //"wx312453bf54f34f20";
-	    $secret = yii::$app->params['wx_appsecret']; //"ea1c8feb90b29e39a967ca73ca2bd1e4";
+	    $appid = WX_APPID; //"wx312453bf54f34f20";
+	    $secret = WX_APPSECRET;
 	    $code = trim(htmlentities($_GET["code"]));
 	    
 	    $get_token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$secret.'&code='.$code.'&grant_type=authorization_code';
@@ -120,27 +125,28 @@ class mobile extends base {
 	    
 	    $user_obj = json_decode($res, true);
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
-	        $_obj = new SetDataModel();
-	        $get_where = 'openid = "'. $user_obj['openid'] .'"';
-	        $_user_obj = $_obj->getData('user_list', $get_where);
+	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
+	        
 	        $get_wx_info = array();
 	        $get_wx_info['openid'] = $user_obj['openid'];
-	        $get_wx_info['user_name'] = $user_obj['nickname'];
+	        $get_wx_info['username'] = $user_obj['nickname'];
 	        $get_wx_info['user_sex'] = $user_obj['sex'];
-	        $get_wx_info['user_photo'] = $user_obj['headimgurl'];
+	        $get_wx_info['img'] = $user_obj['headimgurl'];
+	        $get_wx_info['password'] = md5('111111');
 	        if (empty($_user_obj)) {
 	            $get_wx_info['add_time'] = date("Y-m-d H:i:s");
-	            $get_wx_info['login_time'] = date("Y-m-d H:i:s");
-	            $id = $_obj->setData('user_list', $get_wx_info);
+	            $get_wx_info['login_time'] = time();
+	            $sql = "insert into `@#_member`(openid, username, user_sex, img, password, login_time, add_time) values('{$get_wx_info['openid']}', '{$get_wx_info['username']}', '{$get_wx_info['user_sex']}', '{$get_wx_info['img']}', '{$get_wx_info['password']}', '{$get_wx_info['login_time']}', '{$get_wx_info['add_time']}')";
+	            $this->db->Query($sql);
 	        } else {
 	            $id = $_user_obj[false]['id'];
-	            $set_columns = array();
-	            $set_columns['login_time'] = date("Y-m-d H:i:s");
-	            $_obj->setData('user_list', $set_columns, $id);
+	            $login_time = time();
+	            $sql = "UPDATE `@#_member` SET login_time='{$login_time}' where `uid`='$id'";
+	            $this->db->Query($sql);
 	        }
-	        yii::$app->session['user_id'] = $id;
-	        yii::$app->session['user_name'] = $user_obj['nickname'];
-	        return $this->redirect('/index.php?r=desk/index');
+	        $_SESSION['user_id'] = $id;
+	        $_SESSION['username'] = $user_obj['nickname'];
+	        return $this->redirect('/?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
@@ -150,6 +156,7 @@ class mobile extends base {
 	
 	//商品列表
 	public function glist(){
+	    print_r($_SESSION);
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
 		$key="所有商品";

@@ -7,14 +7,16 @@ class base extends SystemAction {
 	protected $userinfo=NULL;	
 	public function __construct(){
 		$this->db = System::load_sys_class("model");
-		$uid=intval(_encrypt(_getcookie("uid"),'DECODE'));		
-		$ushell=_encrypt(_getcookie("ushell"),'DECODE');
+		$uid = $uid= $_SESSION['user_id'];
+// 		$uid=intval(_encrypt(_getcookie("uid"),'DECODE'));		
+// 		$ushell=_encrypt(_getcookie("ushell"),'DECODE');
+		
 		if(!$uid)$this->userinfo=false;
 		$this->userinfo=$this->db->GetOne("SELECT * from `@#_member` where `uid` = '$uid'");
 		if(!$this->userinfo)$this->userinfo=false;	
 		
 		$shell=md5($this->userinfo['uid'].$this->userinfo['password'].$this->userinfo['mobile'].$this->userinfo['email']);		
-		if($ushell!=$shell)$this->userinfo=false;
+// 		if($ushell!=$shell)$this->userinfo=false;
 		global $_cfg;		
 		$_cfg['userinfo']=$this->userinfo;
 	}
