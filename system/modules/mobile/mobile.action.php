@@ -112,21 +112,24 @@ class mobile extends base {
 	            $get_wx_info['add_time'] = date("Y-m-d H:i:s");
 	            $get_wx_info['login_time'] = time();
 	            $sql = "insert into `@#_member`(openid, username, user_sex, img, password, login_time, add_time) values('{$get_wx_info['openid']}', '{$get_wx_info['username']}', '{$get_wx_info['user_sex']}', '{$get_wx_info['img']}', '{$get_wx_info['password']}', '{$get_wx_info['login_time']}', '{$get_wx_info['add_time']}')";
+	            echo $sql;
 	            $this->db->Query($sql);
 	        } else {
 	            $id = $_user_obj[false]['id'];
 	            $login_time = time();
 	            $sql = "UPDATE `@#_member` SET login_time='{$login_time}' where `uid`='$id'";
+	            echo $sql;
 	            $this->db->Query($sql);
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
-	        return $this->redirect('/?/mobile/mobile/glist');
+	        echo 'ok';
+	        //header('Location: /?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
 	    }
-	
+	   exit;
 	}
 	//商品列表
 	public function glist(){
