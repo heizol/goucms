@@ -16,6 +16,9 @@ class mobile extends base {
 	//首页
 	public function init(){
 	    print_r($_SERVER);
+	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback')) {
+	        $this->callwxback($_GET['code']);
+	    }
 	    echo 'system wrong !!';
 	    exit;
 // 	    header("Location: /?/mobile/mobile/glist");
@@ -66,10 +69,10 @@ class mobile extends base {
 	/**
 	 * @desc 限制微信登录
 	 */
-	public function callWxBack() {
+	public function callwxback($code) {
 	    $appid = WX_APPID; //"wx312453bf54f34f20";
 	    $secret = WX_APPSECRET;
-	    $code = trim(htmlentities($_GET["code"]));
+	    $code = trim(htmlentities($code));
 	    if (empty($code)) {
 	        echo 'system wrong!';
 	        exit;
