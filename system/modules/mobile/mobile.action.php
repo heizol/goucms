@@ -10,9 +10,10 @@ class mobile extends base {
 	public function __construct() {
 	    session_start();
 		parent::__construct();
-		$user_id = $this->getUserId();
 		$this->db=System::load_sys_class('model');
-				
+		$user_id = $this->getUserId();
+		var_dump($user_id);
+		echo 'helloworld';
 	}	
 
 	public function  sql_demo(){
