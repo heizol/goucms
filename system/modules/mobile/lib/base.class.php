@@ -5,7 +5,8 @@ define("MEMBER",true);
 
 class base extends SystemAction {
 	protected $userinfo=NULL;
-	public function __construct(){		
+	public function __construct(){	
+	    session_start();
 	
 // 		if(ROUTE_M=='member' && ROUTE_C=='user' && ROUTE_A=='login'){
 // 			return;

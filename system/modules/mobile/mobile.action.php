@@ -79,8 +79,7 @@ class mobile extends base {
 	
 	//商品列表
 	public function glist(){
-	    $user_id = $this->getUserId();
-	    print_r($_SESSION);
+	    $this->getUserId();
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
 		$key="所有商品";
@@ -88,7 +87,7 @@ class mobile extends base {
 	}
 	//ajax获取商品列表信息
 	public function glistajax(){
-	    $user_id = $this->getUserId();
+	    $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$cate_band =htmlspecialchars($this->segment(4));
 		$select =htmlspecialchars($this->segment(5));
@@ -194,6 +193,7 @@ class mobile extends base {
 	
 	//商品详细
 	public function item(){
+	    $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$key="商品详情";
 		$mysql_model=System::load_sys_class('model');
@@ -278,6 +278,7 @@ class mobile extends base {
 	
 	//往期商品查看
 	public function dataserver(){
+	    $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$key="揭晓结果";
 		$itemid=intval($this->segment(4));
@@ -410,7 +411,8 @@ class mobile extends base {
 	}	
 
 	//最新揭晓
-	public function lottery(){		
+	public function lottery(){
+	    $this->getUserId();
 	     $webname=$this->_cfg['web_name'];
 		//最新揭晓
 		$shopqishu=$this->db->GetList("select * from `@#_shoplist` where `q_end_time` is not null ORDER BY `q_end_time` DESC LIMIT 0,4");	
@@ -435,7 +437,7 @@ class mobile extends base {
 	}
 	//图文详细
 	public function goodsdesc(){
-	    $user_id = $this->getUserId();
+	    $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$key="图文详情";
 		$itemid=intval($this->segment(4));
@@ -447,7 +449,7 @@ class mobile extends base {
 	}
 	//晒单评论
 	public function goodspost(){
-	    $user_id = $this->getUserId();
+	    $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$key="晒单评论";
 		$itemid=intval($this->segment(4));
@@ -520,7 +522,7 @@ class mobile extends base {
 	
 	//访问个人主页
 	public function userindex(){
-	    $user_id = $this->getUserId();
+	  $this->getUserId();
 	  $webname=$this->_cfg['web_name'];
 	  $uid=safe_replace($this->segment(4));
 	  //$uid=intval($this->segment(4))-1000000000;
