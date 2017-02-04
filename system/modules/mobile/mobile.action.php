@@ -13,19 +13,6 @@ class mobile extends base {
 		$this->db=System::load_sys_class('model');
 	}	
 
-	public function  sql_demo(){
-			$sql_text = file_get_contents("up.sql");
-			$sql_text = explode(";",$sql_text);
-			
-			
-			$ok = $this->db->GetOne("SHOW TABLES LIKE '@#_pay'");
-			if(empty($ok)){
-				echo "kong";
-			}else{
-				echo "nonull";
-			}
-	}	
-	
 	//首页
 	public function init(){	
 	    header("Location: /?/mobile/mobile/glist");
