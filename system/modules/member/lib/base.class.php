@@ -63,7 +63,7 @@ class base extends SystemAction {
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
 	        header("Location:" . $wx_url);
 	    } else {
-	        echo $user_id . '==';
+	        return $user_id;
 	    }
 	    exit;
 	}
