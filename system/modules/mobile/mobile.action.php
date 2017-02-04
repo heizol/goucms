@@ -12,8 +12,6 @@ class mobile extends base {
 		parent::__construct();
 		$this->db=System::load_sys_class('model');
 		$user_id = $this->getUserId();
-		var_dump($user_id);
-		echo 'helloworld';
 	}	
 
 	public function  sql_demo(){
@@ -84,7 +82,7 @@ class mobile extends base {
 	    if (empty($user_id)) {
 	        // 跳转微信
 	        $app_id = WX_APPID; // Yii::$app->params['wx_appid'];
-	        $redirect_uri = 'http://duobao.joinear.com/?/mobile/mobile/callWxBack';
+	        $redirect_uri = 'http://duobao.joinear.com/mobile/mobile/callWxBack';
 	        $scope = 'snsapi_userinfo'; // SCOPE
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
 	        header("Location:" . $wx_url);
