@@ -14,7 +14,8 @@ class mobile extends base {
 	}	
 
 	//首页
-	public function init(){	
+	public function init(){
+	    print_r($_SERVER);
 	    echo 'system wrong !!';
 	    exit;
 // 	    header("Location: /?/mobile/mobile/glist");
