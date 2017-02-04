@@ -66,6 +66,7 @@ class mobile extends base {
 	
 	//商品列表
 	public function glist(){
+	    $_SESSION['haha'] = 'world';
 	    print_r($_SESSION);
         exit;
 	    $this->getUserId();
