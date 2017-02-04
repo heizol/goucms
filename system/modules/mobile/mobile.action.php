@@ -15,7 +15,7 @@ class mobile extends base {
 
 	//首页
 	public function init(){
-	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback')) {
+	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
 	        $this->callwxback($_GET['code']);
 	    }
 	    echo 'system wrong !!';
@@ -111,9 +111,11 @@ class mobile extends base {
 	        if (empty($_user_obj)) {
 	            $get_wx_info['add_time'] = date("Y-m-d H:i:s");
 	            $get_wx_info['login_time'] = time();
-	            $sql = "insert into `@#_member`(openid, username, user_sex, img, password, login_time, add_time) values('{$get_wx_info['openid']}', '{$get_wx_info['username']}', '{$get_wx_info['user_sex']}', '{$get_wx_info['img']}', '{$get_wx_info['password']}', '{$get_wx_info['login_time']}', '{$get_wx_info['add_time']}')";
+	            $sql = "insert into `@#_member`(open_id, username, user_sex, img, password, login_time, add_time) values('{$get_wx_info['openid']}', '{$get_wx_info['username']}', '{$get_wx_info['user_sex']}', '{$get_wx_info['img']}', '{$get_wx_info['password']}', '{$get_wx_info['login_time']}', '{$get_wx_info['add_time']}')";
 	            echo $sql;
 	            $this->db->Query($sql);
+	            $id = $this->db->insert_id();
+	            $user_obj['nickname'] = $get_wx_info['username'];
 	        } else {
 	            $id = $_user_obj[false]['id'];
 	            $login_time = time();
@@ -123,6 +125,7 @@ class mobile extends base {
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
+	        print_r($_SESSION);
 	        echo 'ok';
 	        //header('Location: /?/mobile/mobile/glist');
 	    } else {
