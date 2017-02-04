@@ -61,17 +61,23 @@ class base extends SystemAction {
 	        $redirect_uri = 'http://duobao.joinear.com/mobile/mobile/callWxBack';
 	        $scope = 'snsapi_userinfo'; // SCOPE
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
-	        header("Location:" . $wx_url);
+	        echo $wx_url;
+	        exit;
+	        //header("Location:" . $wx_url);
 	    } else {
-	        return $user_id;
+	        echo $user_id . '==';
 	    }
+	    exit;
 	}
 	
 	public function callWxBack() {
 	    $appid = WX_APPID; //"wx312453bf54f34f20";
 	    $secret = WX_APPSECRET;
 	    $code = trim(htmlentities($_GET["code"]));
-	
+	    if (empty($code)) {
+	        echo 'system wrong!';
+	        exit;
+	    }
 	    $get_token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$secret.'&code='.$code.'&grant_type=authorization_code';
 	    $ch = curl_init();
 	    curl_setopt($ch,CURLOPT_URL,$get_token_url);
@@ -94,6 +100,8 @@ class base extends SystemAction {
 	    curl_close($ch);
 	
 	    $user_obj = json_decode($res, true);
+	    
+	    var_dump($user_obj);
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
 	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
 	
@@ -116,10 +124,10 @@ class base extends SystemAction {
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
-	        print_r($_SESSION);
+	        var_dump($_SESSION);
 	        echo 'hellowr';
 	        exit;
-	        return $this->redirect('/?/mobile/mobile/glist');
+// 	        return $this->redirect('/?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
