@@ -22,8 +22,6 @@ class user extends memberbase {
 	    $this->getUserId();
 		$webname=$this->_cfg['web_name'];
 		$user = $this->userinfo;
-		print_r($user);
-		exit;
 		if($user){			
 			header("Location:".WEB_PATH."/mobile/home/");exit;
 		}
