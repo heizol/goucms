@@ -16,7 +16,6 @@ class mobile extends base {
 	//首页
 	public function init(){
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
-	        echo 'helloworld';
 	        $this->callwxback($_GET['code']);
 	    } else {
 	        echo 'system wrong !!';
@@ -136,9 +135,6 @@ class mobile extends base {
 	}
 	//商品列表
 	public function glist(){
-	    echo 'haha';
-	    print_r($_SESSION);
-	    exit;
 	    $this->getUserId();
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
