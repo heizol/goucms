@@ -52,7 +52,7 @@
 						<div class="u-Cart-r">
 							<p class="z-Cart-tt"><a href="{WEB_PATH}/mobile/mobile/item/{wc:$val['id']}" class="gray6">(第{wc:$val['qishu']}期){wc:$val['title']}</a></p>
 							<ins class="z-promo gray9">剩余<em class="arial">{wc:$val['zongrenshu']-$val['canyurenshu']}</em>人次  </ins>
-							<p class="gray9">总共云购：<em class="arial">{wc:$Mcartlist[$val['id']]['num']}</em>人次/<em class="orange arial">￥{wc:$Mcartlist[$val['id']]['money']}.00</em></p>
+							<p class="gray9">总共夺宝：<em class="arial">{wc:$Mcartlist[$val['id']]['num']}</em>人次/<em class="orange arial">￥{wc:$Mcartlist[$val['id']]['money']}.00</em></p>
 							<p class="f-Cart-Other">
 								<a href="javascript:;" class="fr z-del" name="delLink" cid="{wc:$val['id']}"></a>
 								<a href="javascript:;" class="fl z-jian {wc:if $Mcartlist[$val['id']]['num']==1}z-jiandis{wc:if:end}">-</a>
@@ -69,7 +69,7 @@
 	            </ul>
 	        </article>
 	       
-	    <div id="divBtmMoney" class="g-Total-bt"><p>总共云购
+	    <div id="divBtmMoney" class="g-Total-bt"><p>总共夺宝
 			<span class="orange arial z-user">{wc:$num}</span>个商品  合计金额：
 			<span class="orange arial">{wc:$buyshopmoney}.00</span> 元</p>
 			<a href="javascript:;" class="orgBtn">结 算</a>

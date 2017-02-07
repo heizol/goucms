@@ -52,12 +52,12 @@
                 </div>
         	    <div class="pResultsR">
                     <div class="g-snav">
-                        <div class="g-snav-lst">总共云购<br><dd><b class="orange">{wc:$gorecode['gonumber']}</b><br>人次</dd></div>
+                        <div class="g-snav-lst">总共夺宝<br><dd><b class="orange">{wc:$gorecode['gonumber']}</b><br>人次</dd></div>
                         <div class="g-snav-lst">揭晓时间<br><dd class="gray9"><span>{wc:fun:microt($item['q_end_time'])}</span></dd></div>
-                        <div class="g-snav-lst">云购时间<br><dd class="gray9"><span>{wc:fun:microt($gorecode['time'])}</span></dd></div>
+                        <div class="g-snav-lst">夺宝时间<br><dd class="gray9"><span>{wc:fun:microt($gorecode['time'])}</span></dd></div>
                     </div>
                 </div>
-        	    <p><a href="{WEB_PATH}/mobile/mobile/calResult/{wc:$item['id']}" class="fr">查看计算结果</a>幸运云购码：<b class="orange">{wc:$item['q_user_code']}</b></p>
+        	    <p><a href="{WEB_PATH}/mobile/mobile/calResult/{wc:$item['id']}" class="fr">查看计算结果</a>幸运夺宝码：<b class="orange">{wc:$item['q_user_code']}</b></p>
             </div>
         </div>
         {wc:if:end}
@@ -112,7 +112,7 @@
 			  <div id="divAutoRTime" class="pSurplus" time="{wc:$sysj}" timeAlt="{wc:fun:date('Y-m-d-H',$item['xsjx_time'])}"><p><span>限时揭晓</span>剩余时间：<em>00</em>时<em>00</em>分<em>00</em>秒</p></div>
 			  {wc:if:end}
               <div id="btnBuyBox" class="pBtn" codeid="{wc:$item['id']}">
-				<a href="javascript:;" class="fl buyBtn">立即1元云购</a>
+				<a href="javascript:;" class="fl buyBtn">立即1元夺宝</a>
 				<a href="javascript:;" class="fr addBtn">加入购物车</a>
 			  </div>
 			{wc:if:end}
@@ -120,7 +120,7 @@
         <!-- 参与记录，商品详细，晒单导航 -->
         <div class="joinAndGet">
     	    <dl>
-    	        <a href="{WEB_PATH}/mobile/mobile/buyrecords/{wc:$item['id']}"><b class="fr z-arrow"></b>所有云购记录</a>
+    	        <a href="{WEB_PATH}/mobile/mobile/buyrecords/{wc:$item['id']}"><b class="fr z-arrow"></b>所有夺宝记录</a>
 				<a href="{WEB_PATH}/mobile/mobile/goodsdesc/{wc:$item['id']}"><b class="fr z-arrow"></b>图文详情<em>（建议WIFI下使用）</em> </a>
 				 
 				<a href="{WEB_PATH}/mobile/mobile/goodspost/{wc:$item['sid']}"><b class="fr z-arrow"></b>已有<span class="orange arial">{wc:fun:count($shaidan)}</span>个幸运者晒单<strong class="orange arial">{wc:$sum}</strong>条评论</a>
@@ -135,10 +135,10 @@
             	    <dd>
 					<em class="blue">{wc:fun:get_user_name($itemlist[0]['q_uid'])}</em>({wc:fun:get_ip($gorecode['id'],'ipcity')}) 
 					</dd>
-                    <dd>总共云购：<em class="orange arial">{wc:$gorecode['gonumber']}</em>人次</dd>
-                    <dd>幸运云购码：<em class="orange arial">{wc:$gorecode['huode']}</em></dd>
+                    <dd>总共夺宝：<em class="orange arial">{wc:$gorecode['gonumber']}</em>人次</dd>
+                    <dd>幸运夺宝码：<em class="orange arial">{wc:$gorecode['huode']}</em></dd>
                     <dd>揭晓时间：{wc:fun:microt($itemlist[0]['q_end_time'])}</dd>								   
-                    <dd>云购时间：{wc:fun:microt($gorecode['time'])}</dd>
+                    <dd>夺宝时间：{wc:fun:microt($gorecode['time'])}</dd>
                 </li>
             </ul>
 			{wc:if:end}

@@ -348,7 +348,7 @@ class mobile extends base {
 		$category=$this->db->GetOne("select * from `@#_category` where `cateid` = '$item[cateid]' LIMIT 1");
 		$brand=$this->db->GetOne("select * from `@#_brand` where `id` = '$item[brandid]' LIMIT 1");
 		
-		//云购中奖码
+		//夺宝中奖码
 		$q_user = unserialize($item['q_user']);		
 		$q_user_code_len = strlen($item['q_user_code']);
 		$q_user_code_arr = array();
@@ -372,11 +372,11 @@ class mobile extends base {
 			}
 		}
 		 
-		//总云购次数
+		//总夺宝次数
 		$user_shop_number = 0;
-		//用户云购时间
+		//用户夺宝时间
 		$user_shop_time = 0;
-		//得到云购码
+		//得到夺宝码
 		$user_shop_codes = '';
 		 
 		$user_shop_list = $this->db->GetList("select * from `@#_member_go_record` where `uid`= '$item[q_uid]' and `shopid` = '$itemid' and `shopqishu` = '$item[qishu]'");
@@ -481,7 +481,7 @@ class mobile extends base {
 	//商品购买记录
 	public function buyrecords(){	
 	    $webname=$this->_cfg['web_name'];
-		$key="所有云购记录";
+		$key="所有夺宝记录";
 		$itemid=intval($this->segment(4));
 		$cords=$this->db->GetList("select * from `@#_member_go_record` where `shopid`='$itemid'");
 		if(!$cords){
@@ -583,7 +583,7 @@ class mobile extends base {
 	  //获取个人资料
 	  $member=$this->db->GetOne("select * from `@#_member` where `uid`='$uid'");
 	  
-	  //获取云购等级  云购新手  云购小将==
+	  //获取夺宝等级  夺宝新手  夺宝小将==
 	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
 	   
 	  $jingyan=$member['jingyan'];

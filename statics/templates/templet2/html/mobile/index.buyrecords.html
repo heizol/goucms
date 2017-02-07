@@ -25,7 +25,7 @@
     <input name="hidCodeID" type="hidden" id="hidCodeID" value="18101" />
     <input name="hidIsEnd" type="hidden" id="hidIsEnd" value="1" />
 
-    <!-- 云购记录 -->
+    <!-- 夺宝记录 -->
     <section id="buyRecordPage" class="goodsCon">
         <div id="divRecordList" class="recordCon z-minheight" style="display:block;">
            {wc:loop $cords $c} 
@@ -38,7 +38,7 @@
 					<strong>{wc:if $c['ip']}
 							({wc:fun:get_ip($c['id'],'ipcity')} IP:{wc:fun:get_ip($c['id'],'ipmac')})
 							{wc:if:end}</strong><br>
-					<span>云购了<b class="orange">{wc:$c['gonumber']}</b>人次</span><em class="arial">{wc:fun:date("Y-m-d H:i:s",$c['time'])}</em>
+					<span>夺宝了<b class="orange">{wc:$c['gonumber']}</b>人次</span><em class="arial">{wc:fun:date("Y-m-d H:i:s",$c['time'])}</em>
 				</li><i></i>
 			</ul>
 		   {wc:loop:end}

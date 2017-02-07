@@ -42,9 +42,9 @@
 				$q_end_time=date("Y-m-d H:i:s",$jikxiao['q_end_time']);
 				{wc:php:end}
 				{wc:if $jikxiao['q_uid']}
-				<p>幸运云购码：<em class="orange">{wc:$jikxiao['q_user_code']}</em></p>
+				<p>幸运夺宝码：<em class="orange">{wc:$jikxiao['q_user_code']}</em></p>
 				{wc:if:end}
-				<p>本期云购：<em class="orange">{wc:fun:get_user_goods_num($shaidan['sd_userid'],$shaidan['sd_shopid'])}</em>人次</p>
+				<p>本期夺宝：<em class="orange">{wc:fun:get_user_goods_num($shaidan['sd_userid'],$shaidan['sd_shopid'])}</em>人次</p>
 				<p>揭晓时间：<em class="arial">{wc:$q_end_time}</em></p> 
 				
 			</div>                

@@ -3,7 +3,7 @@
  return array (
   'yungou' => 
   array (
-    'name' => '云购默认模板',
+    'name' => '夺宝默认模板',
     'dir' => 'yungou',
     'html' => 'html',
     'author' => '韬龙网络1',
@@ -13,7 +13,7 @@
     'name' => 'two',
     'dir' => 'templet2',
     'html' => 'html',
-    'author' => '韬龙',
+    'author' => '聚念',
   ),
    'templet3' => 
   array (

@@ -17,7 +17,7 @@ class invite extends base {
 	function friends(){
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
-        $title="我的云购中心";
+        $title="我的夺宝中心";
         $memberdj=$this->db->GetList("select * from `@#_member_group`");
         $jingyan=$member['jingyan'];
         if(!empty($memberdj)){
@@ -31,7 +31,7 @@ class invite extends base {
         $mysql_model=System::load_sys_class('model');
         $member=$this->userinfo;
         $uid=_getcookie('uid');
-        $notinvolvednum=0;  //未参加云购的人数
+        $notinvolvednum=0;  //未参加夺宝的人数
         $involvednum=0;     //参加预购的人数
         $involvedtotal=0;   //邀请人数
 
@@ -55,10 +55,10 @@ class invite extends base {
             //判断哪个好友有消费
             if(empty($accounts[$sqluid])){
                 $notinvolvednum +=1;
-                $records[$sqluid]='未参与云购';
+                $records[$sqluid]='未参与夺宝';
             }else{
                 $involvednum +=1;
-                $records[$sqluid]='已参与云购';
+                $records[$sqluid]='已参与夺宝';
             }
 
 
@@ -68,7 +68,7 @@ class invite extends base {
     function commissions(){
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
-        $title="我的云购中心";
+        $title="我的夺宝中心";
         $memberdj=$this->db->GetList("select * from `@#_member_group`");
         $jingyan=$member['jingyan'];
         if(!empty($memberdj)){
@@ -149,7 +149,7 @@ class invite extends base {
 
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
-        $title="我的云购中心";
+        $title="我的夺宝中心";
         $memberdj=$this->db->GetList("select * from `@#_member_group`");
         $jingyan=$member['jingyan'];
         if(!empty($memberdj)){
@@ -233,7 +233,7 @@ class invite extends base {
             $type       = 1;
             $pay        ="佣金";
             $time       =time();
-            $content    ="使用佣金充值到云购账户";
+            $content    ="使用佣金充值到夺宝账户";
 
             if($money <= 0 || $money > $total){
                 _message("佣金金额输入不正确！");exit;
@@ -266,7 +266,7 @@ class invite extends base {
     function record(){
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
-        $title="我的云购中心";
+        $title="我的夺宝中心";
         $memberdj=$this->db->GetList("select * from `@#_member_group`");
         $jingyan=$member['jingyan'];
         if(!empty($memberdj)){
@@ -293,22 +293,22 @@ class invite extends base {
         include templates("mobile/invite","record");
     }
 
-	//云购记录
+	//夺宝记录
 	public function userbuylist(){
 	   $webname=$this->_cfg['web_name'];
 		$mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
 		$uid = $member['uid'];
-		$title="云购记录";					
+		$title="夺宝记录";					
 		//$record=$mysql_model->GetList("select * from `@#_member_go_record` where `uid`='$uid' ORDER BY `time` DESC");				
 		include templates("mobile/user","userbuylist");
 	}
-	//云购记录详细
+	//夺宝记录详细
 	public function userbuydetail(){
 	    $webname=$this->_cfg['web_name'];
 		$mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
-		$title="云购详情";
+		$title="夺宝详情";
 		$crodid=intval($this->segment(4));
 		$record=$mysql_model->GetOne("select * from `@#_member_go_record` where `id`='$crodid' and `uid`='$member[uid]' LIMIT 1");		
 		if($crodid>0){

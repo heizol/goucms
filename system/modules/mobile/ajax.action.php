@@ -26,7 +26,7 @@ class ajax extends base {
 		}
 		
 		$member=$this->userinfo;
-		$title="我的云购中心";	
+		$title="我的夺宝中心";	
 		 
 		 $user['code']=1;
 		 $user['username']=get_user_name($member['uid']);

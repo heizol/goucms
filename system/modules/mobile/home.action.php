@@ -16,10 +16,10 @@ class home extends base {
 	    $user_id = $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$member=$this->userinfo;
-		$title="我的云购中心";	
+		$title="我的夺宝中心";	
 		//$quanzi=$this->db->GetList("select * from `@#_quanzi_tiezi` order by id DESC LIMIT 5");		
 		
-	 //获取云购等级  云购新手  云购小将==
+	 //获取夺宝等级  夺宝新手  夺宝小将==
 	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
 	   
 	  $jingyan=$member['jingyan'];
@@ -38,10 +38,10 @@ class home extends base {
 	    $user_id = $this->getUserId();
         $webname=$this->_cfg['web_name'];
         $member=$this->userinfo;
-        $title="我的云购中心";
+        $title="我的夺宝中心";
         //$quanzi=$this->db->GetList("select * from `@#_quanzi_tiezi` order by id DESC LIMIT 5");
 
-        //获取云购等级  云购新手  云购小将==
+        //获取夺宝等级  夺宝新手  夺宝小将==
         $memberdj=$this->db->GetList("select * from `@#_member_group`");
 
         $jingyan=$member['jingyan'];
@@ -263,13 +263,13 @@ class home extends base {
 		}
 	} */
 	
-	//云购记录
+	//夺宝记录
 	public function userbuylist(){
 	   $webname=$this->_cfg['web_name'];
 		$mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
 		$uid = $member['uid'];
-		$title="云购记录";					
+		$title="夺宝记录";					
 		//$record=$mysql_model->GetList("select * from `@#_member_go_record` where `uid`='$uid' ORDER BY `time` DESC");		
 		$record=$mysql_model->GetList("select *,sum(gonumber) as gonumber from `@#_member_go_record` a left join `@#_shoplist` b on a.shopid=b.id where a.uid='$member[uid]' GROUP BY shopid ");
 		$record = count($record);
@@ -277,12 +277,12 @@ class home extends base {
 		$announced = count($announced);		
 		include templates("mobile/user","userbuylist");
 	}
-	//云购记录详细
+	//夺宝记录详细
 	public function userbuydetail(){
 	    $webname=$this->_cfg['web_name'];
 		$mysql_model=System::load_sys_class('model');
 		$member=$this->userinfo;
-		$title="云购详情";
+		$title="夺宝详情";
 		$crodid=intval($this->segment(4));
 		$record=$mysql_model->GetOne("select * from `@#_member_go_record` where `id`='$crodid' and `uid`='$member[uid]' LIMIT 1");		
 		if($crodid>0){
@@ -334,7 +334,7 @@ class home extends base {
 		if(isset($_POST['submit'])){
 			$mid = TENPAY_MID; //商户编号 
 			$key = TENPAY_KEY; //商户密钥
-			$desc = '云购系统'; //商品名称   			  
+			$desc = '夺宝系统'; //商品名称   			  
 			$oid = date("YmdHis").rand(100,999); //商户订单号   
 			$pri = $_POST['money']*100; //总价(单位:分)   
 			$url = WEB_PATH.'/member/home/tenpaysuccess'; //回调地址   			

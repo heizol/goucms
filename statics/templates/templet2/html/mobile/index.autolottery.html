@@ -111,10 +111,10 @@
                     <p>
                         恭喜<span class="z-user blue" onclick="location.href='{WEB_PATH}/uname/{wc:fun:idjia($shop['q_uid'])}'">{wc:fun:get_user_name($shop['q_uid'])}</span>获得
                     </p>
-                    <p class="m-limit-Code">幸运云购码：<em class="orange">{wc:$shop['q_user_code']}</em>
+                    <p class="m-limit-Code">幸运夺宝码：<em class="orange">{wc:$shop['q_user_code']}</em>
                     </p>
                     <p>
-                        云购人次：{wc:$user_shop_number[$shop['q_uid']][$shop['id']]}
+                        夺宝人次：{wc:$user_shop_number[$shop['q_uid']][$shop['id']]}
                     </p>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                     </div>
 					{wc:else}
 					<div class="u-Btn-li">
-						<a href="javascript:;" class="z-ShoppingBtn" id="{wc:$shop['id']}">立即1元云购</a>
+						<a href="javascript:;" class="z-ShoppingBtn" id="{wc:$shop['id']}">立即1元夺宝</a>
 					</div>
 					<div class="u-Btn-li">
 						<a href="javascript:void(0);" class="z-cartBtn" id="{wc:$shop['id']}">加入购物车</a>
@@ -185,13 +185,13 @@
 		<h3>限时揭晓规则</h3>
 		<div class="limit-tips-ct">
 			<p><s></s><b>所有限时揭晓商品，不管已参与人次是否达到总需参与人次，都按截止时间准时揭晓。</b></p>
-			<p><s></s><b>如果计算出的云购码未被购买，则取差值最小的云购码作为幸运云购码。</b></p>
-			<p><s></s><b>如果有2个云购码最小差值相等，则取大值作为最终幸运云购码。</b></p>
+			<p><s></s><b>如果计算出的夺宝码未被购买，则取差值最小的夺宝码作为幸运夺宝码。</b></p>
+			<p><s></s><b>如果有2个夺宝码最小差值相等，则取大值作为最终幸运夺宝码。</b></p>
 			<p><s></s><b>限时揭晓商品不参与差价送福分活动且晒单不可再获得1000福分奖励。</b></p>
-			<p><s></s><b>限时揭晓的幸运云购码计算方式：</b></p>
+			<p><s></s><b>限时揭晓的幸运夺宝码计算方式：</b></p>
 			  <em><span>1)</span><b>限时揭晓商品取截止时间前网站所有商品100条购买时间记录。</b></em>
 			  <em><span>2)</span><b>时间按时、分、秒、毫秒依次排列组成一组数值。</b></em>
-			  <em><span>3)</span><b>将这100组数值之和除以商品总需参与人次后取余数，余数加上10,000,001即为“幸运云购码”。</b></em>
+			  <em><span>3)</span><b>将这100组数值之和除以商品总需参与人次后取余数，余数加上10,000,001即为“幸运夺宝码”。</b></em>
 		</div>
 	</article>
 </section>
