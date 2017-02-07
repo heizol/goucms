@@ -18,7 +18,7 @@ class mobile extends base {
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
 	        $this->callwxback($_GET['code']);
 	    } else {
-	        echo 'system wrong !!';
+	        header('Location: /?/mobile/mobile/glist');
 	        exit;
 	    }
 	    

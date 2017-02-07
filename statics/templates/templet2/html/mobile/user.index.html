@@ -24,7 +24,7 @@
         </div>
         <h2>我的夺宝</h2>
         <div class="head-r">
-	        <a href="{WEB_PATH}/mobile/mobile" class="z-Home"></a>
+	        <a href="{WEB_PATH}/mobile/mobile/" class="z-Home"></a>
         </div>
     </header>
 
@@ -32,15 +32,16 @@
 	    <div class="clearfix m-round m-name">
 			<div class="fl f-Himg">
 				<a href="{WEB_PATH}/mobile/mobile/userindex/{wc:$member['uid']}" class="z-Himg">
-				<img src="{G_UPLOAD_PATH}/{wc:fun:get_user_key($member['uid'],'img')}" border=0/></a>
+				<img src="{wc:$member['img']}" border=0/></a>
 				<span class="z-class-icon01 gray02"><s></s>{wc:$member['yungoudj']}</span>
 			</div>
 			<div class="m-name-info"><p class="u-name">
-				<b class="z-name gray01">{wc:fun:get_user_name($member['uid'])}</b><em>({wc:$member['mobile']})</em></p>
-				<ul class="clearfix u-mbr-info"><li>可用福分 <span class="orange">{wc:$member['score']}</span></li>
-				<li>经验值 <span class="orange">{wc:$member['jingyan']}</span></li>
+				<em>{wc:$member['username']}</em></p>
+				<ul class="clearfix u-mbr-info">
+				<!-- <li>可用福分 <span class="orange">{wc:$member['score']}</span></li>
+				<li>经验值 <span class="orange">{wc:$member['jingyan']}</span></li> -->
 				<li>余额 <span class="orange">￥{wc:$member['money']}</span>
-				<a href="{WEB_PATH}/mobile/home/userrecharge" class="fr z-Recharge-btn">去充值</a></li>
+				<!-- <a href="{WEB_PATH}/mobile/home/userrecharge" class="fr z-Recharge-btn">去充值</a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -50,7 +51,7 @@
 			    <li><a href="{WEB_PATH}/mobile/home/orderlist"><b class="z-arrow"></b>获得的商品</a></li>
 			    <li><a href="{WEB_PATH}/mobile/home/singlelist"><b class="z-arrow"></b>我的晒单</a></li>
 			    <li><a href="{WEB_PATH}/mobile/home/userbalance"><b class="z-arrow"></b>帐户明细</a></li>
-                <li><a href="{WEB_PATH}/mobile/home/invite"><b class="z-arrow"></b>邀请管理</a></li>
+                <!-- <li><a href="{WEB_PATH}/mobile/home/invite"><b class="z-arrow"></b>邀请管理</a></li> -->
 		    </ul>
 	    </div>
     </section>
