@@ -16,20 +16,21 @@ class home extends base {
 	    $user_id = $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$member=$this->userinfo;
+		var_dump($member);
 		$title="我的夺宝中心";	
 		//$quanzi=$this->db->GetList("select * from `@#_quanzi_tiezi` order by id DESC LIMIT 5");		
 		
 	 //获取夺宝等级  夺宝新手  夺宝小将==
-	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
+// 	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
 	   
-	  $jingyan=$member['jingyan'];
-	  if(!empty($memberdj)){
-	     foreach($memberdj as $key=>$val){
-		    if($jingyan>=$val['jingyan_start'] && $jingyan<=$val['jingyan_end']){
-			   $member['yungoudj']=$val['name'];
-			}
-		 }
-	  }
+// 	  $jingyan=$member['jingyan'];
+// 	  if(!empty($memberdj)){
+// 	     foreach($memberdj as $key=>$val){
+// 		    if($jingyan>=$val['jingyan_start'] && $jingyan<=$val['jingyan_end']){
+// 			   $member['yungoudj']=$val['name'];
+// 			}
+// 		 }
+// 	  }
 	  
 		include templates("mobile/user","index");
 	}

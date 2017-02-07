@@ -33,16 +33,16 @@
 			<div class="fl f-Himg">
 				<a href="{WEB_PATH}/mobile/mobile/userindex/{wc:$member['uid']}" class="z-Himg">
 				<img src="{wc:$member['img']}" border=0/></a>
-				<span class="z-class-icon01 gray02"><s></s>{wc:$member['yungoudj']}</span>
+				<!-- <span class="z-class-icon01 gray02"><s></s>{wc:$member['yungoudj']}</span> -->
 			</div>
 			<div class="m-name-info"><p class="u-name">
-				<em>{wc:$member['username']}</em></p>
-				<ul class="clearfix u-mbr-info">
+				<b>{wc:$member['username']}</b><em>余额 <span class="orange">￥{wc:$member['money']}</span></em></p>
+				<!-- <ul class="clearfix u-mbr-info"> -->
 				<!-- <li>可用福分 <span class="orange">{wc:$member['score']}</span></li>
 				<li>经验值 <span class="orange">{wc:$member['jingyan']}</span></li> -->
-				<li>余额 <span class="orange">￥{wc:$member['money']}</span>
-				<!-- <a href="{WEB_PATH}/mobile/home/userrecharge" class="fr z-Recharge-btn">去充值</a></li> -->
-				</ul>
+				<!-- <li>
+				<a href="{WEB_PATH}/mobile/home/userrecharge" class="fr z-Recharge-btn">去充值</a></li>
+				</ul -->>
 			</div>
 		</div>
 	    <div class="m-round m-member-nav">
