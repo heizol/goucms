@@ -16,7 +16,6 @@ class home extends base {
 	    $user_id = $this->getUserId();
 	    $webname=$this->_cfg['web_name'];
 		$member=$this->userinfo;
-		var_dump($member);
 		$title="我的夺宝中心";	
 		//$quanzi=$this->db->GetList("select * from `@#_quanzi_tiezi` order by id DESC LIMIT 5");		
 		
