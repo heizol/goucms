@@ -52,13 +52,15 @@ class memberbase extends SystemAction {
 	
 	public function getUserId() {
 	    $user_id = $_SESSION['user_id'];
+	    var_dump($user_id);
 	    if (empty($user_id)) {
+	        print_r($user_id);
 	        // 跳转微信
 	        $app_id = WX_APPID; // Yii::$app->params['wx_appid'];
 	        $redirect_uri = urlencode('http://duobao.joinear.com/mobile/mobile/callwxback');
 	        $scope = 'snsapi_userinfo'; // SCOPE
 	        $wx_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$app_id.'&redirect_uri='.$redirect_uri.'&response_type=code&scope='.$scope.'&state=STATE#wechat_redirect';
-	        header("Location:" . $wx_url);
+	        // header("Location:" . $wx_url);
 	    } else {
 	        return $user_id;
 	    }
