@@ -8,10 +8,13 @@ class memberbase extends SystemAction {
 	public function __construct(){
 	    session_start();
 		$this->db = System::load_sys_class("model");
-		$uid=$_SESSION['user_id'];		
+		
+		$uid=$_SESSION['user_id'];
+		print_r($_SESSION);
 // 		$ushell=_encrypt(_getcookie("ushell"),'DECODE');
 		if(!$uid)$this->userinfo=false;
 		$this->userinfo=$this->db->GetOne("SELECT * from `@#_member` where `uid` = '$uid'");
+		print_r($this->userinfo);
 		if(!$this->userinfo)$this->userinfo=false;	
 	
 // 		$shell=md5($this->userinfo['uid'].$this->userinfo['password'].$this->userinfo['mobile'].$this->userinfo['email']);		

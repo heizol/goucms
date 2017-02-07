@@ -18,9 +18,11 @@ class user extends memberbase {
 		header("location: ".WEB_PATH."/mobile/mobile/");
 	}
 	//返回登录页面
-	public function login(){	
-		 $webname=$this->_cfg['web_name'];
+	public function login(){
+	    $this->getUserId();
+		$webname=$this->_cfg['web_name'];
 		$user = $this->userinfo;
+		
 		if($user){			
 			header("Location:".WEB_PATH."/mobile/home/");exit;
 		}
