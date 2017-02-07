@@ -24,7 +24,7 @@
 <?php include templates("mobile/index","top");?>
 <!-- 内页顶部 -->
 
-    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="<?php if(!empty($itemlist[0]['q_uid'])): ?><?php echo $itemlist['0']['q_uid']; ?><?php endif; ?>"/>   <!--上期获奖者id-->
+    <input name="hidGoodsID" type="hidden" id="hidGoodsID" value="<?php if(!empty($itemlist[0]['q_uid'])): ?><?php echo $itemlist['0']['q_uid']; ?><?php  else: ?>0<?php endif; ?>"/>   <!--上期获奖者id-->
     <input name="hidCodeID" type="hidden" id="hidCodeID" value="<?php echo $item['id']; ?>"/>     <!--本期商品id-->
     <section class="goodsCon pCon">
 	    <!-- 导航 -->
@@ -203,17 +203,17 @@ Base.getScript('<?php echo G_TEMPLATES_JS; ?>/mobile/Bottom.js');
 <script>
 $(function(){
   $(".blue").click(function(){
-   
-     url="<?php echo WEB_PATH; ?>/uname/<?php echo idjia($itemlist[0]['q_uid']); ?>";
+	 hidGoodsID = $("#hidGoodsID").val();
+     url="<?php echo WEB_PATH; ?>/uname/<?php echo idjia("+ hidGoodsID +"); ?>";
 	 window.location.href=url;
   
   });
   
-  $(".orange.arial").click(function(){
+  /* $(".orange .arial").click(function(){
      url="<?php echo WEB_PATH; ?>/mobile/mobile/dataserver/<?php echo $itemlist['0']['id']; ?>";
 	 window.location.href=url;
   
-  });
+  }); */
 
 })
 

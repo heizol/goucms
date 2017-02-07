@@ -19,31 +19,32 @@
 <!-- 栏目页面顶部 -->
 
 <?php include templates("mobile/index","header");?>
-<script src="<?php echo G_TEMPLATES_JS; ?>/mobile/ajax.js"></script>
+<!-- <script src="<?php echo G_TEMPLATES_JS; ?>/mobile/ajax.js"></script> -->
 
 <!-- 内页顶部 -->
 
     <section class="goodsCon">
 	    <!-- 导航 -->
+	    <!--
 	    <div class="goodsNav">
             <ul id="divGoodsNav">
+            
        	 	    <li order="10" class="current"><a href="javascript:;">即将揭晓<b></b></a></li>
                 <li order="20"><a href="javascript:;">人气<b></b></a></li>
-                <li order="40"><a href="javascript:;">最新<b></b></a></li>
-                <li order="50" type="price"><a href="javascript:;">价格<em></em><s></s><b></b></a></li>
-                <li order="">
+                 <li order="">
                     <a href="javascript:;">商品分类<s class="arrowUp"></s></a>
                     <dl style="display:none;">
                         <dd type="0" class="sOrange"><a href="javascript:;">全部</a></dd>
-						<?php $data=$this->DB()->GetList("select * from `@#_category` where `model`='1'",array("type"=>1,"key"=>'',"cache"=>0)); ?>
+						
 						<?php $ln=1;if(is_array($data)) foreach($data AS $categoryx): ?>
 						<dd><a id="<?php echo $categoryx['cateid']; ?>" href="javascript:;"><?php echo $categoryx['name']; ?></a></dd>
 						<?php  endforeach; $ln++; unset($ln); ?>
-						<?php if(defined('G_IN_ADMIN')) {echo '<div style="padding:8px;background-color:#F93; color:#fff;border:1px solid #f60;text-align:center"><b>This Tag</b></div>';}?>
+						
 					</dl>
-                </li>
+                </li> 
            </ul>
         </div>
+        -->
         <!-- 列表 -->
         <div class="goodsList">
             <div id="divGoodsLoading" class="loading" style="display:none;"><b></b>正在加载...</div>

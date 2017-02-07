@@ -103,7 +103,6 @@ class mobile extends base {
 	     
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
 	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
-	        print_r($_user_obj);exit;
 	        $get_wx_info = array();
 	        $get_wx_info['openid'] = $user_obj['openid'];
 	        $get_wx_info['username'] = $user_obj['nickname'];
@@ -118,15 +117,14 @@ class mobile extends base {
 	            $id = $this->db->insert_id();
 	            $user_obj['nickname'] = $get_wx_info['username'];
 	        } else {
-	            $id = $_user_obj[false]['id'];
+	            $id = $_user_obj['uid'];
 	            $login_time = time();
 	            $sql = "UPDATE `@#_member` SET login_time='{$login_time}' where `uid`='$id'";
 	            $this->db->Query($sql);
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
-	        print_r($_SESSION);
-	       // header('Location: /?/mobile/mobile/glist');
+	        header('Location: /?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
