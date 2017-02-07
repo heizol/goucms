@@ -17,7 +17,6 @@ class mobile extends base {
 	public function init(){
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
 	        echo 'helloworld';
-	        exit;
 	        $this->callwxback($_GET['code']);
 	    } else {
 	        echo 'system wrong !!';
@@ -127,7 +126,8 @@ class mobile extends base {
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
-	        header('Location: /?/mobile/mobile/glist');
+	        print_r($_SESSION);
+	       // header('Location: /?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';
 	        exit;
@@ -136,7 +136,9 @@ class mobile extends base {
 	}
 	//商品列表
 	public function glist(){
-	    $_SESSION['haha'] = 'world';
+	    echo 'haha';
+	    print_r($_SESSION);
+	    exit;
 	    $this->getUserId();
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
