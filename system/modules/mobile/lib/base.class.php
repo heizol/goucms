@@ -14,13 +14,13 @@ class base extends SystemAction {
 // 		if(ROUTE_M=='member' && ROUTE_C=='user' && ROUTE_A=='register'){
 // 			return;
 // 		}
-// 		$uid= $_SESSION['user_id']; //intval(_encrypt(_getcookie("uid"),'DECODE'));		
+		$uid= $_SESSION['user_id']; //intval(_encrypt(_getcookie("uid"),'DECODE'));		
 // // 		$utype=_encrypt(_getcookie("utype"),'DECODE');
 // // 		$ushell=_encrypt(_getcookie("ushell"),'DECODE');
 	
 // // 		if($utype===NULL)$this->HeaderLogin();
 // 		if(!$uid)$this->HeaderLogin();
-// 		$this->userinfo=$this->DB()->GetOne("SELECT * from `@#_member` where `uid` = '$uid'");
+		$this->userinfo=$this->DB()->GetOne("SELECT * from `@#_member` where `uid` = '$uid'");
 // 		if(!$this->userinfo) {
 // 		    $this->HeaderLogin();		
 // 		}

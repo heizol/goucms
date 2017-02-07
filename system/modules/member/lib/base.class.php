@@ -6,8 +6,9 @@ System::load_sys_fun("user");
 class base extends SystemAction {
 	protected $userinfo=NULL;	
 	public function __construct(){
+	    session_start();
 		$this->db = System::load_sys_class("model");
-		$uid = $uid= $_SESSION['user_id'];
+		$uid = $_SESSION['user_id'];
 // 		$uid=intval(_encrypt(_getcookie("uid"),'DECODE'));		
 // 		$ushell=_encrypt(_getcookie("ushell"),'DECODE');
 		
