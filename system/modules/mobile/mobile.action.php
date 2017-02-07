@@ -104,7 +104,7 @@ class mobile extends base {
 	     
 	    if (!empty($user_obj) && !empty($user_obj['openid'])) {
 	        $_user_obj = $this->db->GetOne("SELECT * from `@#_member` where `open_id` = '{$user_obj['openid']}'");
-	
+	        print_r($_user_obj);exit;
 	        $get_wx_info = array();
 	        $get_wx_info['openid'] = $user_obj['openid'];
 	        $get_wx_info['username'] = $user_obj['nickname'];
