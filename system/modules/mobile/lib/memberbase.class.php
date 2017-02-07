@@ -51,10 +51,7 @@ class memberbase extends SystemAction {
 	
 	public function getUserId() {
 	    $user_id = $_SESSION['user_id'];
-	    var_dump($user_id);
-	    exit;
 	    if (empty($user_id)) {
-	        print_r($user_id);
 	        // 跳转微信
 	        $app_id = WX_APPID; // Yii::$app->params['wx_appid'];
 	        $redirect_uri = urlencode('http://duobao.joinear.com/mobile/mobile/callwxback');

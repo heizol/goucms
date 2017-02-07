@@ -20,11 +20,10 @@ class user extends memberbase {
 	//返回登录页面
 	public function login(){
 	    $this->getUserId();
-	    echo 'yyy';
-	    exit;
 		$webname=$this->_cfg['web_name'];
 		$user = $this->userinfo;
-		
+		print_r($user);
+		exit;
 		if($user){			
 			header("Location:".WEB_PATH."/mobile/home/");exit;
 		}
