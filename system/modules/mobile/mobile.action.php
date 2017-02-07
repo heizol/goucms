@@ -16,10 +16,14 @@ class mobile extends base {
 	//首页
 	public function init(){
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
+	        echo 'helloworld';
+	        exit;
 	        $this->callwxback($_GET['code']);
+	    } else {
+	        echo 'system wrong !!';
+	        exit;
 	    }
-	    echo 'system wrong !!';
-	    exit;
+	    
 // 	    header("Location: /?/mobile/mobile/glist");
 // 			$webname=$this->_cfg['web_name'];
  

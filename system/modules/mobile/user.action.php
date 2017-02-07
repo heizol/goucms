@@ -6,7 +6,7 @@ System::load_app_fun('user','go');
 System::load_app_fun('my','go');
 System::load_sys_fun('send');
 class user extends memberbase {
-	public function __construct(){	
+	public function __construct(){
 		parent::__construct();
 		$this->db = System::load_sys_class("model");
 	}
