@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>云购系统后台登陆</title>
+<title>边吃边抢系统后台登陆</title>
 <link rel="stylesheet" href="<?php echo G_GLOBAL_STYLE; ?>/global/css/global.css" type="text/css">
 <link rel="stylesheet" href="<?php echo G_GLOBAL_STYLE; ?>/global/css/login.css" type="text/css">
 <style>
@@ -35,8 +35,8 @@
 
 </style>
 </head>
-<body>
-<div class="login_index">
+<body style="background: transparent none repeat scroll 0px 0px;background-color: gray;">
+<div class="login_index" style="background: transparent none repeat scroll 0px 0px;">
     <div class="login">
         <div class="login_header">
             <span class="login_header_span1"></span>
@@ -46,7 +46,7 @@
         </div> 
    		<!--[if !IE]><!--><div class="login_yun1"></div><!--<![endif]-->
         <!--[if gte IE 8]><div class="login_yun1"></div><![endif]-->
-        <div class="login_title">欢迎登陆 YunGouCMS </div>
+        <div class="login_title">欢迎登陆 边吃边抢 系统 </div>
         <div class="login_form">
         <ul>
         <form action="#" method="post" id="form">
@@ -63,10 +63,6 @@
         </div>
     </div><!--login end-->
 </div><!--index end-->
-<div class="footer">
-Copyright ©  韬龙网络
-</div>
-
 <script src="<?php echo G_GLOBAL_STYLE; ?>/global/js/jquery-1.8.3.min.js"></script>
 <script src="<?php echo G_GLOBAL_STYLE; ?>/global/js/global.js"></script>
 <script src="<?php echo G_PLUGIN_PATH; ?>/layer/layer.min.js"></script>
