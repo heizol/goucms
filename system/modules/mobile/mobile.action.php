@@ -9,6 +9,7 @@ class mobile extends base {
 	
 	public function __construct() {
 	    session_start();
+	    $_SESSION['user_id'] = 1;
 		parent::__construct();
 		$this->db=System::load_sys_class('model');
 	}	
@@ -583,17 +584,17 @@ class mobile extends base {
 	  //获取个人资料
 	  $member=$this->db->GetOne("select * from `@#_member` where `uid`='$uid'");
 	  
-	  //获取夺宝等级  夺宝新手  夺宝小将==
-	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
+// 	  //获取夺宝等级  夺宝新手  夺宝小将==
+// 	  $memberdj=$this->db->GetList("select * from `@#_member_group`");
 	   
 	  $jingyan=$member['jingyan'];
-	  if(!empty($memberdj)){
-	     foreach($memberdj as $key=>$val){
-		    if($jingyan>=$val['jingyan_start'] && $jingyan<=$val['jingyan_end']){
-			   $member['yungoudj']=$val['name'];
-			}
-		 }
-	  }  
+// 	  if(!empty($memberdj)){
+// 	     foreach($memberdj as $key=>$val){
+// 		    if($jingyan>=$val['jingyan_start'] && $jingyan<=$val['jingyan_end']){
+// 			   $member['yungoudj']=$val['name'];
+// 			}
+// 		 }
+// 	  }  
 	  include templates("mobile/index","userindex");
 	}
  
