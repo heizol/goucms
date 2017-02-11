@@ -95,7 +95,7 @@
          <article id="bankList" class="clearfix mt10 m-round g-pay-ment g-bank-ct">
 		    <ul>
 			    <li class="gray6 z-pay-grayC"><s class="z-arrow"></s>选择支付方式</li>
-			    <li class="gray9"  umb='wxpay' bank="nobank"><i class="z-bank-Round"><s></s></i>微信支付</li>	
+			    <li class="gray9"  style="display:block;" umb='wxpay' bank="nobank"><i class="z-bank-Roundsel"><s></s></i>微信支付</li>	
 				<!-- {wc:getlist sql="SELECT pay_class,pay_name FROM `@#_pay` WHERE `pay_start` = '1' and `pay_mobile` = '1'" return="paydata"}
 				{wc:loop $paydata $row}
 					<li class="gray9"  umb='{wc:$row['pay_class']}' bank="nobank"><i class="z-bank-Round"><s></s></i>{wc:$row['pay_name']}</li>	

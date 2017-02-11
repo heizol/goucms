@@ -78,7 +78,7 @@ $(function() {
                 o = false
             }
         };
-        if (ffdk > 0) {		 
+        if (ffdk > 0) {	 
             c.parent().click(function() {
                 k(0);
                 if (c.attr("sel") == 1) {
@@ -185,7 +185,7 @@ $(function() {
             o = false
         }
         var s = $("#btnPay");
-        var u = function() { 
+        var u = function() {
              
 			var submitcode = Path.submitcode
 		
@@ -195,7 +195,8 @@ $(function() {
 				alert("不可以重复提交订单!")
 				return false;
 			}
-						
+			
+			
             if(checkpay=='nosel' && banktype=='nobank'){
 			  alert("请选择一种支付方式！");
 			  if(this.cc){
@@ -206,7 +207,7 @@ $(function() {
             if (!a) {
                 return false;
             }
-            if (w + g >= x) {			 
+            if (w + g >= x) {	 
                 a = false;
                 s.unbind("click").addClass("dis");
 			    if (shopnum != -1) {
