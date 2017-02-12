@@ -13,10 +13,10 @@ $(function() {
         var shopnum = parseInt($("#shopnum").val());		 
         var r = "支付方式";
         //var g = parseInt(t / 100) > x ? x: parseInt(t / 100);
-        var g = ffdk > x ? x: ffdk;
+        var g = 0; // ffdk > x ? x: ffdk;
         var w = 0;
         var e = 0;
-		var checkpay='nosel';//选择支付方式
+		var checkpay='wxpay';//选择支付方式
 		var banktype='nobank';
 		 
         if (g < x) {		 
@@ -179,7 +179,7 @@ $(function() {
             h.removeClass("z-pay-grayC").html('<s class="z-arrow"></s>选择<b class="z-mlr">' + r + "</b>支付" + ((g > 0 || w > 0) ? "剩余": "") + '<em class="orange">' + e + ".00</em>元").nextAll().show();
             o = true
 			banktype='nobank';
-			checkpay='wxpay'
+			checkpay='wxpay';
         } else {		 
             h.addClass("z-pay-grayC").nextAll().hide();
             o = false
