@@ -302,6 +302,14 @@ class Wxpay_client_pub extends Common_util_pub
 		$this->result = $this->xmlToArray($this->response);
 		return $this->result;
 	}
+	
+	function getParametersAndResult()
+	{
+	    $data['parameters'] = $this->parameters;
+	    $data['response'] = $this->response;
+	    $data['result'] = $this->result;
+	    return $data;
+	}
 }
 
 

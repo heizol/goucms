@@ -62,6 +62,7 @@ class wxpay {
 			$unifiedOrderResult = $unifiedOrder->getResult();
             //print_r($unifiedOrderResult);
             //exit;
+            print_r($unifiedOrder->getParametersAndResult());
 			//商户根据实际情况设置相应的处理流程
 			if ($unifiedOrderResult["return_code"] == "FAIL") 
 			{
