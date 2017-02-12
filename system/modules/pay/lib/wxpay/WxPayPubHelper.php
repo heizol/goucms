@@ -347,6 +347,8 @@ class UnifiedOrder_pub extends Wxpay_client_pub
 				throw new SDKRuntimeException("缺少统一支付接口必填参数trade_type！"."<br>");
 			}elseif ($this->parameters["trade_type"] == "JSAPI" &&
 				$this->parameters["openid"] == NULL){
+			    echo '<pre/>';
+			    print_r($this->parameters);
 				throw new SDKRuntimeException("统一支付接口中，缺少必填参数openid！trade_type为JSAPI时，openid为必填参数！"."<br>");
 			}
 		   	$this->parameters["appid"] = WxPayConf_pub::$APPID;//公众账号ID
