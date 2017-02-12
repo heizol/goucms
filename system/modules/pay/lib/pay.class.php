@@ -201,6 +201,7 @@ class pay {
 		
 		$config['code'] = $dingdancode;
 		$config['pay_type_data'] = $pay_type['pay_key'];
+		$config['openid'] = $_SESSION['open_id'];
 		//为聚宝支付添加参数
 		$config['pay_useruid'] = $uid;
 		$paydb->config($config);
