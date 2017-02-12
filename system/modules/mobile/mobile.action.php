@@ -18,7 +18,9 @@ class mobile extends base {
 	public function init(){
 	    if (stristr($_SERVER['REQUEST_URI'], 'callwxback') && !empty($_GET['code'])) {
 	        $this->callwxback($_GET['code']);
-	    } else {
+	    } else if (stristr($_SERVER['REQUEST_URI'], 'wxpayreturn')) {
+	        $this->wxpayreturn();
+	    }else {
 	        header('Location: /?/mobile/mobile/glist');
 	        exit;
 	    }
@@ -465,7 +467,7 @@ class mobile extends base {
 		}
 	}
 	
-	public function wxpay() {
+	public function wxpayreturn() {
 	    echo 'hello world';
 	    exit;
 	}
