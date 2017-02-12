@@ -9,8 +9,8 @@ class mobile extends base {
 	
 	public function __construct() {
 	    session_start();
-	    $_SESSION['user_id'] = 1;
-	    $_SESSION['open_id'] = 'onH0exHa9JKEceVW-SxG2sKPLhE8';
+// 	    $_SESSION['user_id'] = 1;
+// 	    $_SESSION['open_id'] = 'onH0exHa9JKEceVW-SxG2sKPLhE8';
 		parent::__construct();
 		$this->db=System::load_sys_class('model');
 	}	
