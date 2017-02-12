@@ -56,7 +56,7 @@ class wxpay {
 			//$unifiedOrder->setParameter("time_start","XXXX");//交易起始时间
 			//$unifiedOrder->setParameter("time_expire","XXXX");//交易结束时间 
 			//$unifiedOrder->setParameter("goods_tag","XXXX");//商品标记 
-			$unifiedOrder->setParameter("openid", 'onH0exHa9JKEceVW-SxG2sKPLhE8');//用户标识
+			$unifiedOrder->setParameter("openid", $_SESSION['open_id']);//用户标识
 			//$unifiedOrder->setParameter("product_id","XXXX");//商品ID
 			
 			//获取统一支付接口结果
