@@ -144,7 +144,6 @@ class cart extends base {
         session_start();
 
         $checkpay=$this->segment(4);//获取支付方式  fufen   money  bank
-        var_dump($checkpay);
         $banktype=$this->segment(5);//获取选择的银行 CMBCHINA  ICBC CCB
         $money=$this->segment(6);   //获取需支付金额
         $fufen=$this->segment(7);   //获取学分
@@ -170,9 +169,6 @@ class cart extends base {
 
 
         $zhifutype = $this->db->GetOne("select * from `@#_pay` where `pay_class` = '$checkpay' and `pay_start`='1' and `pay_mobile`='1'");
-        var_dump($zhifutype);
-        exit;
-        
         $pay_checkbox=false;
         $pay_type_bank=false;
         $pay_type_id=false;

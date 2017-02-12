@@ -203,7 +203,8 @@ class pay {
 		$config['pay_type_data'] = $pay_type['pay_key'];
 		//为聚宝支付添加参数
 		$config['pay_useruid'] = $uid;
-		
+		echo '===';
+		print_r($config);
 		$paydb->config($config);
 		$paydb->send_pay();
 
