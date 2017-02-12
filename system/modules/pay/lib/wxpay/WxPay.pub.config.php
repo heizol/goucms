@@ -25,7 +25,7 @@ class WxPayConf_pub
 
     //=======【异步通知url设置】===================================
     //异步通知url，商户根据实际开发过程设定
-    static $NOTIFY_URL ='http://duobao.joinear.com/weixin/demo/js_api_call.php';
+    static $NOTIFY_URL ='http://duobao.joinear.com/?/mobile/mobile/wxpay';
 
     //=======【curl超时设置】===================================
     //本例程通过curl使用HTTP POST方法，此处可修改其超时时间，默认为30秒

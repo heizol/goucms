@@ -39,7 +39,7 @@ class wxpay {
 			//noncestr已填,商户无需重复填写
 			//spbill_create_ip已填,商户无需重复填写
 			//sign已填,商户无需重复填写
-			$unifiedOrder->setParameter("body","云购商品");//商品描述
+			$unifiedOrder->setParameter("body","边吃边抢商品");//商品描述
 			//自定义订单号，此处仅作举例
 			$total_fee=$config['money']*100;
 			$out_trade_no=$config['code'];

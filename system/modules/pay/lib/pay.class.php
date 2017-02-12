@@ -185,13 +185,13 @@ class pay {
 		$pay_type['pay_key'] = unserialize($pay_type['pay_key']);	
 
 		$config=array();
-		$config['id'] = $pay_type['pay_key']['id']['val'];			//支付合作ID
-		$config['key'] = $pay_type['pay_key']['key']['val'];		//支付KEY
+		$config['id'] = WX_APPID;			//支付合作ID
+		$config['key'] = WX_APPSECRET;		//支付KEY
 		
 		$config['shouname'] = _cfg('web_name');						//收款方
 		$config['title'] = _cfg('web_name');						//付款项目
 		$config['money'] = $money;									//付款金额$money
-		$config['type']  = $pay_type['pay_type'];					//支付方式：	即时到帐1   中介担保2		
+		$config['type']  = 1; // $pay_type['pay_type'];					//支付方式：	即时到帐1   中介担保2		
 				
 		
 		$config['ReturnUrl']  = G_WEB_PATH.'/index.php/pay/'.$pay_type['pay_class'].'_url/qiantai/';	//前台回调	
@@ -203,8 +203,6 @@ class pay {
 		$config['pay_type_data'] = $pay_type['pay_key'];
 		//为聚宝支付添加参数
 		$config['pay_useruid'] = $uid;
-		echo '===';
-		print_r($config);
 		$paydb->config($config);
 		$paydb->send_pay();
 

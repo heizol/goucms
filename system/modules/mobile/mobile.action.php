@@ -463,7 +463,12 @@ class mobile extends base {
 			$shop=explode("&",$attach);
 			gopay($member,$shop[0],$shop[1],$shop[2]);
 		}
-	}	
+	}
+	
+	public function wxpay() {
+	    echo 'hello world';
+	    exit;
+	}
 
 	//最新揭晓
 	public function lottery(){
