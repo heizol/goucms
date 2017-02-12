@@ -11,7 +11,7 @@ class WxPayConf_pub
     //受理商ID，身份标识
     static $MCHID = WX_MACHID;
     //商户支付密钥Key。审核通过后，在微信发送的邮件中查看
-    static $KEY = WX_APPSECRET;
+    static $KEY = WX_KEY;
     //JSAPI接口中获取openid，审核后在公众平台开启开发模式后可查看
     static $APPSECRET = WX_APPSECRET;
 
