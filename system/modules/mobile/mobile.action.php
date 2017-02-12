@@ -10,6 +10,7 @@ class mobile extends base {
 	public function __construct() {
 	    session_start();
 	    $_SESSION['user_id'] = 1;
+	    $_SESSION['open_id'] = 'onH0exHa9JKEceVW-SxG2sKPLhE8';
 		parent::__construct();
 		$this->db=System::load_sys_class('model');
 	}	
@@ -127,6 +128,7 @@ class mobile extends base {
 	        }
 	        $_SESSION['user_id'] = $id;
 	        $_SESSION['username'] = $user_obj['nickname'];
+	        $_SESSION['open_id'] = $user_obj['openid'];
 	        header('Location: /?/mobile/mobile/glist');
 	    } else {
 	        echo '该平台只能在微信中登录';

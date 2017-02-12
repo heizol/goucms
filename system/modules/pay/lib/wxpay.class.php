@@ -44,6 +44,7 @@ class wxpay {
 			$total_fee=$config['money']*100;
 			$out_trade_no=$config['code'];
 			//$total_fee=1;
+			
 			$unifiedOrder->setParameter("out_trade_no","$out_trade_no");//商户订单号 
 			$unifiedOrder->setParameter("total_fee",$total_fee);//总金额
 			$unifiedOrder->setParameter("notify_url",WxPayConf_pub::$NOTIFY_URL);//通知地址 
@@ -55,7 +56,7 @@ class wxpay {
 			//$unifiedOrder->setParameter("time_start","XXXX");//交易起始时间
 			//$unifiedOrder->setParameter("time_expire","XXXX");//交易结束时间 
 			//$unifiedOrder->setParameter("goods_tag","XXXX");//商品标记 
-			//$unifiedOrder->setParameter("openid","XXXX");//用户标识
+			$unifiedOrder->setParameter("openid", 'onH0exHa9JKEceVW-SxG2sKPLhE8');//用户标识
 			//$unifiedOrder->setParameter("product_id","XXXX");//商品ID
 			
 			//获取统一支付接口结果
