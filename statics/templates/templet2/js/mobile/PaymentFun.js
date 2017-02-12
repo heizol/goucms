@@ -178,8 +178,8 @@ $(function() {
         if (e > 0) {		 
             h.removeClass("z-pay-grayC").html('<s class="z-arrow"></s>选择<b class="z-mlr">' + r + "</b>支付" + ((g > 0 || w > 0) ? "剩余": "") + '<em class="orange">' + e + ".00</em>元").nextAll().show();
             o = true
-			banktype='CMBCHINA-WAP';
-			checkpay='bank'
+			banktype='nobank';
+			checkpay='wxpay'
         } else {		 
             h.addClass("z-pay-grayC").nextAll().hide();
             o = false
