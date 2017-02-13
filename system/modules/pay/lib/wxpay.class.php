@@ -48,7 +48,7 @@ class wxpay {
 			$unifiedOrder->setParameter("out_trade_no","$out_trade_no");//商户订单号 
 			$unifiedOrder->setParameter("total_fee",$total_fee);//总金额
 			$unifiedOrder->setParameter("notify_url",WxPayConf_pub::$NOTIFY_URL);//通知地址 
-			$unifiedOrder->setParameter("trade_type","JSAPI");//交易类型
+			$unifiedOrder->setParameter("trade_type","NATIVE");//交易类型
 			//非必填参数，商户可根据实际情况选填
 			//$unifiedOrder->setParameter("sub_mch_id","XXXX");//子商户号  
 			//$unifiedOrder->setParameter("device_info","XXXX");//设备号 
@@ -57,7 +57,7 @@ class wxpay {
 			//$unifiedOrder->setParameter("time_expire","XXXX");//交易结束时间 
 			//$unifiedOrder->setParameter("goods_tag","XXXX");//商品标记 
 			$unifiedOrder->setParameter("openid", $_SESSION['open_id']);//用户标识
-			//$unifiedOrder->setParameter("product_id","XXXX");//商品ID
+			$unifiedOrder->setParameter("product_id", $out_trade_no);//商品ID
 			
 			//获取统一支付接口结果
 			$unifiedOrderResult = $unifiedOrder->getResult();

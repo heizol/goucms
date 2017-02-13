@@ -8,7 +8,6 @@ System::load_sys_fun('user');
 class home extends base {
 	public function __construct(){ 
 		parent::__construct();
-		session_start();
 		$this->db = System::load_sys_class('model');
 		
 	}

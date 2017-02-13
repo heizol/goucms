@@ -125,8 +125,29 @@ class cart extends base {
         }
         $paylist = $this->db->GetList("select * from `@#_pay` where `pay_start` = '1' and `pay_mobile`='1'");
 
-        session_start();
         $_SESSION['submitcode'] = $submitcode = uniqid();
+//         require_once G_SYSTEM . "/modules/pay/lib/wxpay_lib/WxPay.Api.php";
+//         require_once G_SYSTEM. "/modules/pay/lib/wxpay_lib/WxPay.JsApiPay.php";
+//         require_once G_SYSTEM . '/modules/pay/lib/pay.fun.php';
+        
+//         $dingdancode = pay_get_dingdan_code('C');		//订单号
+//         $input = new WxPayUnifiedOrder();
+//         $input->SetBody("边吃边抢--精彩无限");
+//         $input->SetAttach("夺宝");
+//         $input->SetOut_trade_no($dingdancode);
+//         $input->SetTotal_fee($MoenyCount * 100);
+//         $input->SetTime_start(date("YmdHis"));
+//         $input->SetTime_expire(date("YmdHis", time() + 600));
+//         $input->SetGoods_tag("夺宝");
+//         $input->SetNotify_url("http://duobao.joinear.com/?/mobile/mobile/wx_notify");
+//         $input->SetTrade_type("JSAPI");
+//         $input->SetOpenid($_SESSION['open_id']);
+//         $order = WxPayApi::unifiedOrder($input);
+//         $tools = new JsApiPay();
+//         $jsApiParameters = $tools->GetJsApiParameters($order);
+        $jsApiParameters = '';
+        //获取共享收货地址js函数参数
+        $editAddress = '';
         include templates("mobile/cart","payment");
     }
 

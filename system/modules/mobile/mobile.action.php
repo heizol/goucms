@@ -8,10 +8,9 @@ System::load_sys_fun('user');
 class mobile extends base {
 	
 	public function __construct() {
-	    session_start();
-// 	    $_SESSION['user_id'] = 1;
-// 	    $_SESSION['open_id'] = 'onH0exHa9JKEceVW-SxG2sKPLhE8';
 		parent::__construct();
+		$_SESSION['user_id'] = 1;
+		$_SESSION['open_id'] = 'onH0exHa9JKEceVW-SxG2sKPLhE8';
 		$this->db=System::load_sys_class('model');
 	}	
 
@@ -136,10 +135,15 @@ class mobile extends base {
 	    }
 	   exit;
 	}
+	
+	// 微信通知
+	public function wx_notify(){
+	    
+	    exit;
+	}
 	//商品列表
 	public function glist(){
 	    $this->getUserId();
-	    print_r($_SESSION);
         $webname=$this->_cfg['web_name'];	
 		$title="商品列表_"._cfg("web_name");
 		$key="所有商品";
