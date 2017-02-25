@@ -112,9 +112,12 @@ class mobile extends base {
 	        $get_wx_info['user_sex'] = $user_obj['sex'];
 	        $get_wx_info['img'] = $user_obj['headimgurl'];
 	        $get_wx_info['password'] = md5('111111');
+	        $get_wx_info['emailcode'] = 1;
+	        $get_wx_info['mobilecode'] = 1;
 	        if (empty($_user_obj)) {
 	            $get_wx_info['add_time'] = date("Y-m-d H:i:s");
 	            $get_wx_info['login_time'] = time();
+	            $get_wx_info['time'] = time();   
 	            $sql = "insert into `@#_member`(open_id, username, user_sex, img, password, login_time, add_time) values('{$get_wx_info['openid']}', '{$get_wx_info['username']}', '{$get_wx_info['user_sex']}', '{$get_wx_info['img']}', '{$get_wx_info['password']}', '{$get_wx_info['login_time']}', '{$get_wx_info['add_time']}')";
 	            $this->db->Query($sql);
 	            $id = $this->db->insert_id();
