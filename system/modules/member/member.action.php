@@ -130,8 +130,6 @@ class member extends admin {
 		if(isset($_GET['p'])){$pagenum=$_GET['p'];}else{$pagenum=1;}	
 		$page->config($total,$num,$pagenum,"0");		
 
-		echo "SELECT * FROM `$table` WHERE $sql_where order by `$user_ziduan` $user_order";
-		print_r(array("num"=>$num,"page"=>$pagenum,"type"=>1,"cache"=>0));
 		$members=$this->db->GetPage("SELECT * FROM `$table` WHERE $sql_where order by `$user_ziduan` $user_order",array("num"=>$num,"page"=>$pagenum,"type"=>1,"cache"=>0)); 
 		include $this->tpl(ROUTE_M,'member.lists');
 		
