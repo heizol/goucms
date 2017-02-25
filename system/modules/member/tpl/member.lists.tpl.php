@@ -19,20 +19,20 @@
 	<span class="lr5"></span><input class="button" type="button" onclick="window.location.href='<?php echo $this_path; ?>/day_shop'" value=" 今日消费 ">
 	<span class="lr5"></span><input class="button" type="button" onclick="window.location.href='<?php echo $this_path; ?>/noreg'" value=" 未认证 ">
 	<span class="lr5"></span><input class="button" type="button" onclick="window.location.href='<?php echo $this_path; ?>/del'" value=" 已删除 ">	
-	<span class="lr5"></span>
-	账号绑定:
-	<select name="sousuo">
-					<option value="b_qq">绑定QQ账户</option>					
-	</select>
-	<input class="button" type="button" onclick="window.location.href='<?php echo $this_path; ?>/b_qq'"  value="查看">
-	
+<!--	<span class="lr5"></span> -->
+<!-- 	账号绑定: -->
+<!-- 	<select name="sousuo"> -->
+<!-- 					<option value="b_qq">绑定QQ账户</option>					 -->
+<!-- 	</select> -->
+<!--	<input class="button" type="button" onclick="window.location.href='<?php echo $this_path; ?>/b_qq'"  value="查看">
+	-->
 	<span class="lr10"></span>
 	排序:
 	<select id="user_paixu">
 					<option value="uid">会员uid</option>
 					<option value="money" >账户金额</option>
-					<option value="score">会员福分</option>
-					<option value="jingyan">会员经验</option>
+<!-- 					<option value="score">会员福分</option> -->
+<!-- 					<option value="jingyan">会员经验</option> -->
                     <option value="login_time">登陆时间</option>
 					<option value="time">注册时间</option>
 	</select>

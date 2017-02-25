@@ -11,9 +11,9 @@ class member extends admin {
 		$this->ment=array(
 						array("lists","会员列表",ROUTE_M.'/'.ROUTE_C."/lists"),
 						array("lists","查找会员",ROUTE_M.'/'.ROUTE_C."/select"),
-						array("insert","添加会员",ROUTE_M.'/'.ROUTE_C."/insert"),					
-						array("insert","会员配置",ROUTE_M.'/'.ROUTE_C."/config"),
-						array("insert","<b>会员福利配置</b>",ROUTE_M.'/'.ROUTE_C."/member_fufen"),
+// 						array("insert","添加会员",ROUTE_M.'/'.ROUTE_C."/insert"),					
+// 						array("insert","会员配置",ROUTE_M.'/'.ROUTE_C."/config"),
+// 						array("insert","<b>会员福利配置</b>",ROUTE_M.'/'.ROUTE_C."/member_fufen"),
 						array("insert","充值记录",ROUTE_M.'/'.ROUTE_C."/recharge"),
 					
 		);
@@ -130,6 +130,8 @@ class member extends admin {
 		if(isset($_GET['p'])){$pagenum=$_GET['p'];}else{$pagenum=1;}	
 		$page->config($total,$num,$pagenum,"0");		
 
+		echo "SELECT * FROM `$table` WHERE $sql_where order by `$user_ziduan` $user_order";
+		print_r(array("num"=>$num,"page"=>$pagenum,"type"=>1,"cache"=>0));
 		$members=$this->db->GetPage("SELECT * FROM `$table` WHERE $sql_where order by `$user_ziduan` $user_order",array("num"=>$num,"page"=>$pagenum,"type"=>1,"cache"=>0)); 
 		include $this->tpl(ROUTE_M,'member.lists');
 		
